@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Presenze</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        input[type="button"] {
+            padding: 5px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Gestione Presenze</h1>
+<table id="tabellaPresenze">
+    <thead>
+        <tr>
+            <th>Nome Studente</th>
+            <th>Presente</th>
+            <th>Assente</th>
+            <th>In Ritardo</th>
+        </tr>
+    </thead>
+    <tbody id="tbodyPresenze">
+    </tbody>
+</table>
+
+<script>
+    const studenti = [
+        "Stellina Dematteis",
+        "Tartaruga Dematteis",
+        "Yucky Benua",
+        "Lollo Benua",
+        "Leonard Benua",
+        "Sparcky Benua",
+        "Flaffy Dematteis",
+        "Tina Dematteis",
+        "Grigetta Benua",
+        "Luna Dematteis",
+        "Luna Benua",
+        "Kendy Dematteis",
+        "Papero Benua",
+        "Curt Dematteis",
+        "Briciola Dematteis",
+        "Lampo Benua"
+    ];
+
+    // Carica le presenze dal localStorage al caricamento della pagina
+    window.onload = function() {
+        const presenze = JSON.parse(localStorage.getItem('presenze')) || [];
+        presenze.forEach(presenza => aggiungiPresenzaTabella(presenza));
+    };
+
+    function aggiungiPresenzaTabella(nome) {
+        const tbody = document.getElementById('tbodyPresenze');
+        const tr = document.createElement('tr');
+
+        // Crea cella per il nome dello studente
+        const tdStudente = document.createElement('td');
+        tdStudente.textContent = nome;
+        tr.appendChild(tdStudente);
+
+        // Crea cella per presente
+        const tdPresente = document.createElement('td');
+        const btnPresente = document.createElement('input');
+        btnPresente.type = 'button';
+        btnPresente.value = 'Presente';
+        btnPresente.onclick = () => aggiornaConteggio(nome, 'presente');
+        tdPresente.appendChild(btnPresente);
+        tr.appendChild(tdPresente);
+
+        // Crea cella per assente
+        const tdAssente = document.createElement('td');
+        const btnAssente = document.createElement('input');
+        btnAssente.type = 'button';
+        btnAssente.value = 'Assente';
+        btnAssente.onclick = () => aggiornaConteggio(nome, 'assente');
+        tdAssente.appendChild(btnAssente);
+        tr.appendChild(tdAssente);
+
+        // Crea cella per in ritardo
+        const tdRitardo = document.createElement('td');
+        const btnRitardo = document.createElement('input');
+        btnRitardo.type = 'button';
+        btnRitardo.value = 'In Ritardo';
+        btnRitardo.onclick = () => aggiornaConteggio(nome, 'ritardo');
+        tdRitardo.appendChild(btnRitardo);
+        tr.appendChild(tdRitardo);
+
+        tbody.appendChild(tr);
+    }
+
+    function aggiornaConteggio(nome, tipo) {
+        const presenze = JSON.parse(localStorage.getItem('presenze')) || {};
+        
+        if (!presenze[nome]) {
+            presenze[nome] = { presente: 0, assente: 0, ritardo: 0 };
+        }
+
+        presenze[nome][tipo] += 1; // Incrementa il conteggio per il tipo selezionato
+
+        // Aggiorna il localStorage
+        localStorage.setItem('presenze', JSON.stringify(presenze));
+
+        // Aggiorna la visualizzazione
+        alert(`${tipo.charAt(0).toUpperCase() + tipo.slice(1)} registrata per ${nome}`);
+    }
+</script>
+
+</body>
+</html>

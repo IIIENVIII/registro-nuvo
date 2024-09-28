@@ -1,0 +1,1775 @@
+Uri: https://orario.cfpcemon.it:444/E_1_C_00737BF384B56271B648B77E5E0EEACD93DECE2D8C1F1C0ABC3E6EBC97BD1BE8_L_1040/etudiant.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_00737BF384B56271B648B77E5E0EEACD93DECE2D8C1F1C0ABC3E6EBC97BD1BE8_L_1040\etudiant-1.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_66BF4DB34AAD76F3BFEF22B9DA69B0A3AE3552C31E3445277F246239558ECBC6_L_1040/traductions.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_66BF4DB34AAD76F3BFEF22B9DA69B0A3AE3552C31E3445277F246239558ECBC6_L_1040\traductions-1.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/espace/css/etudiant.css
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\espace\css\etudiant-1.css
+Content Type: text/css
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_E673A00535A6A876A269D970D99AA31BD6897A346B424D706EC4207188AC9B2C_L_1040/etudiant_ext.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_E673A00535A6A876A269D970D99AA31BD6897A346B424D706EC4207188AC9B2C_L_1040\etudiant_ext-1.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_1_C__L_1040/imagesconnexion.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C__L_1040\imagesconnexion-1.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/images/apple-touch-icon.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\images\apple-touch-icon-1.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/images/favicon-16x16.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\images\favicon-16x16-1.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/images/favicon-32x32.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\images\favicon-32x32-1.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/images/favicon.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\images\favicon-1.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/images/manifest.json
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\images\manifest-1.json
+Content Type: application/json
+
+Uri: https://orario.cfpcemon.it:444/studenti
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\studenti-1.html
+Content Type: text/html
+
+Uri: https://orario.cfpcemon.it:444/studenti?fd=1
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\studenti-2.html
+Content Type: text/html
+
+rio.cfpcemon.it\espace\css\fonts\montserrat-300italic.woff2
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-500.woff
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-500.woff
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-500.woff2
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-500.woff2
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-500italic.woff
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-500italic.woff
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-500italic.woff2
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-500italic.woff2
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-600.woff
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-600.woff
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-600.woff2
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-600.woff2
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-600italic.woff
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-600italic.woff
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-600italic.woff2
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-600italic.woff2
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-700.woff
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-700.woff
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-700.woff2
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-700.woff2
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-700italic.woff
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-700italic.woff
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-700italic.woff2
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-700italic.woff2
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-800.woff
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-800.woff
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-800.woff2
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-800.woff2
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-800italic.woff
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-800italic.woff
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-800italic.woff2
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-800italic.woff2
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-900.woff
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-900.woff
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-900.woff2
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-900.woff2
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-900italic.woff
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-900italic.woff
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-900italic.woff2
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-900italic.woff2
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-italic.woff
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-italic.woff
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-italic.woff2
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-italic.woff2
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-regular.woff
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-regular.woff
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/espace/css/fonts/montserrat-regular.woff2
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\espace\css\fonts\montserrat-regular.woff2
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_0F72345CE95166549C57C26C634EBD2AD3FAB39A1F0EFCAF94C421F088989068_L_1040/traductions.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_0F72345CE95166549C57C26C634EBD2AD3FAB39A1F0EFCAF94C421F088989068_L_1040\traductions.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_5C0459C2FE5A0765E4122F344E0BEABA8AFFD414058DDDA58DDA285E830284D0_L_1040/enseignant.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_5C0459C2FE5A0765E4122F344E0BEABA8AFFD414058DDDA58DDA285E830284D0_L_1040\enseignant.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/espace/css/enseignant.css
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\espace\css\enseignant.css
+Content Type: text/css
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/attention.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\attention.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/background.jpg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\background.jpg
+Content Type: image/jpeg
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/Checkbox_Coche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\Checkbox_Coche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/Checkbox_Decoche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\Checkbox_Decoche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/CheckRadio_Coche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\CheckRadio_Coche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/CheckRadio_Decoche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\CheckRadio_Decoche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/CocheCroixRouge.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\CocheCroixRouge.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/CocheVerte.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\CocheVerte.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/CopierPourListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\CopierPourListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/CurseurDeTri.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\CurseurDeTri.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/DeploiementListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\DeploiementListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/DevoirRefait.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\DevoirRefait.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/espace-academie.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\espace-academie.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/espace-administration-console.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\espace-administration-console.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/espace-appariteur.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\espace-appariteur.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/espace-direction.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\espace-direction.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/espace-eleve.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\espace-eleve.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/espace-entreprise.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\espace-entreprise.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/espace-invite.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\espace-invite.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/espace-parent.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\espace-parent.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/espace-professeur.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\espace-professeur.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/espace-vie-scolaire.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\espace-vie-scolaire.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/etoiles_on_off.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\etoiles_on_off.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/evolution_1.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\evolution_1.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/evolution_2.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\evolution_2.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/evolution_3.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\evolution_3.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/FicheCours.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\FicheCours.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/FicheCoursPetit.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\FicheCoursPetit.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/FlechePositionQCM.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\FlechePositionQCM.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/FlecheProfEntrant.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\FlecheProfEntrant.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/fleche_bas.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\fleche_bas.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/fleche_haut.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\fleche_haut.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/HachureGriseCoursSuperposes.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\HachureGriseCoursSuperposes.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/HachureGriseCoursSuperposesPourDiag.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\HachureGriseCoursSuperposesPourDiag.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/HachureNoir.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\HachureNoir.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/hp-bg-desktop.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\hp-bg-desktop.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/hp-logo-desktop.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\hp-logo-desktop.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/hp-logo-mobile.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\hp-logo-mobile.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/hyperplanning-generique.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\hyperplanning-generique.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/icone-pdf.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\icone-pdf.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/ImagePourListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\ImagePourListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/Motifs.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\Motifs.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/qcmDefinirTrou14.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\qcmDefinirTrou14.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/QcmDrapeauRessenti.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\QcmDrapeauRessenti.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/resize.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\resize.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/SonPourListePause.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\SonPourListePause.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/images/SonPourListePlay.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\images\SonPourListePlay.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/Produit/css/curseurs/CurseurDoubleClic.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\Produit\css\curseurs\CurseurDoubleClic.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/Produit/css/curseurs/CurseurMethodeCalculMoyenne.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\Produit\css\curseurs\CurseurMethodeCalculMoyenne.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/Produit/css/curseurs/CurseurPinceauRouge.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\Produit\css\curseurs\CurseurPinceauRouge.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040/Produit/css/curseurs/CurseurPinceauVert.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_7327A4E6B4D37662BCE26025B2F1B710046A802F6B89A83ED4D12FF188B5CFA9_L_1040\Produit\css\curseurs\CurseurPinceauVert.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_0_C_E673A00535A6A876A269D970D99AA31BD6897A346B424D706EC4207188AC9B2C_L_1040/enseignant_ext.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C_E673A00535A6A876A269D970D99AA31BD6897A346B424D706EC4207188AC9B2C_L_1040\enseignant_ext.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_0_C__L_1040/imagesconnexion.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_0_C__L_1040\imagesconnexion.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_3A2582D57B70FFF0276D2EA62EE12EE851328A8A071B8E836CFDF2E9F9CB05F0_L_1040/traductions.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_3A2582D57B70FFF0276D2EA62EE12EE851328A8A071B8E836CFDF2E9F9CB05F0_L_1040\traductions.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_E673A00535A6A876A269D970D99AA31BD6897A346B424D706EC4207188AC9B2C_L_1040/parent_ext.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_E673A00535A6A876A269D970D99AA31BD6897A346B424D706EC4207188AC9B2C_L_1040\parent_ext.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/espace/css/parent.css
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\espace\css\parent.css
+Content Type: text/css
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/attention.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\attention.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/background.jpg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\background.jpg
+Content Type: image/jpeg
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/Checkbox_Coche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\Checkbox_Coche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/Checkbox_Decoche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\Checkbox_Decoche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/CheckRadio_Coche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\CheckRadio_Coche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/CheckRadio_Decoche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\CheckRadio_Decoche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/CocheCroixRouge.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\CocheCroixRouge.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/CocheVerte.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\CocheVerte.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/CopierPourListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\CopierPourListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/CurseurDeTri.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\CurseurDeTri.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/DeploiementListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\DeploiementListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/DevoirRefait.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\DevoirRefait.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/espace-academie.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\espace-academie.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/espace-administration-console.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\espace-administration-console.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/espace-appariteur.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\espace-appariteur.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/espace-direction.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\espace-direction.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/espace-eleve.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\espace-eleve.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/espace-entreprise.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\espace-entreprise.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/espace-invite.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\espace-invite.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/espace-parent.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\espace-parent.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/espace-professeur.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\espace-professeur.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/espace-vie-scolaire.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\espace-vie-scolaire.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/etoiles_on_off.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\etoiles_on_off.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/evolution_1.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\evolution_1.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/evolution_2.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\evolution_2.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/evolution_3.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\evolution_3.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/FicheCours.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\FicheCours.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/FicheCoursPetit.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\FicheCoursPetit.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/FlechePositionQCM.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\FlechePositionQCM.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/FlecheProfEntrant.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\FlecheProfEntrant.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/fleche_bas.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\fleche_bas.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/fleche_haut.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\fleche_haut.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/HachureGriseCoursSuperposes.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\HachureGriseCoursSuperposes.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/HachureGriseCoursSuperposesPourDiag.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\HachureGriseCoursSuperposesPourDiag.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/HachureNoir.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\HachureNoir.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/hp-bg-desktop.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\hp-bg-desktop.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/hp-logo-desktop.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\hp-logo-desktop.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/hp-logo-mobile.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\hp-logo-mobile.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/hyperplanning-generique.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\hyperplanning-generique.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/icone-pdf.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\icone-pdf.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/ImagePourListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\ImagePourListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/Motifs.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\Motifs.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/qcmDefinirTrou14.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\qcmDefinirTrou14.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/QcmDrapeauRessenti.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\QcmDrapeauRessenti.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/resize.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\resize.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/SonPourListePause.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\SonPourListePause.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/images/SonPourListePlay.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\images\SonPourListePlay.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/Produit/css/curseurs/CurseurDoubleClic.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\Produit\css\curseurs\CurseurDoubleClic.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/Produit/css/curseurs/CurseurMethodeCalculMoyenne.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\Produit\css\curseurs\CurseurMethodeCalculMoyenne.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/Produit/css/curseurs/CurseurPinceauRouge.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\Produit\css\curseurs\CurseurPinceauRouge.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040/Produit/css/curseurs/CurseurPinceauVert.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FD39D21855E87F409FA05E9346E9159E6498A24B2DB2AA253F9BA4940A9AB3EC_L_1040\Produit\css\curseurs\CurseurPinceauVert.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_13_C_FF43B427FA51FE6EE256688C5CCF3C00220346032B4C0811B906ABF0F7BF7E06_L_1040/parent.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C_FF43B427FA51FE6EE256688C5CCF3C00220346032B4C0811B906ABF0F7BF7E06_L_1040\parent.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_13_C__L_1040/imagesconnexion.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_13_C__L_1040\imagesconnexion.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_00737BF384B56271B648B77E5E0EEACD93DECE2D8C1F1C0ABC3E6EBC97BD1BE8_L_1040/etudiant.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_00737BF384B56271B648B77E5E0EEACD93DECE2D8C1F1C0ABC3E6EBC97BD1BE8_L_1040\etudiant.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_66BF4DB34AAD76F3BFEF22B9DA69B0A3AE3552C31E3445277F246239558ECBC6_L_1040/traductions.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_66BF4DB34AAD76F3BFEF22B9DA69B0A3AE3552C31E3445277F246239558ECBC6_L_1040\traductions.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/espace/css/etudiant.css
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\espace\css\etudiant.css
+Content Type: text/css
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/attention.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\attention.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/background.jpg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\background.jpg
+Content Type: image/jpeg
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/Checkbox_Coche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\Checkbox_Coche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/Checkbox_Decoche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\Checkbox_Decoche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/CheckRadio_Coche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\CheckRadio_Coche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/CheckRadio_Decoche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\CheckRadio_Decoche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/CocheCroixRouge.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\CocheCroixRouge.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/CocheVerte.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\CocheVerte.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/CopierPourListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\CopierPourListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/CurseurDeTri.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\CurseurDeTri.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/DeploiementListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\DeploiementListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/DevoirRefait.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\DevoirRefait.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/espace-academie.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\espace-academie.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/espace-administration-console.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\espace-administration-console.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/espace-appariteur.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\espace-appariteur.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/espace-direction.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\espace-direction.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/espace-eleve.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\espace-eleve.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/espace-entreprise.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\espace-entreprise.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/espace-invite.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\espace-invite.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/espace-parent.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\espace-parent.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/espace-professeur.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\espace-professeur.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/espace-vie-scolaire.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\espace-vie-scolaire.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/etoiles_on_off.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\etoiles_on_off.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/evolution_1.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\evolution_1.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/evolution_2.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\evolution_2.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/evolution_3.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\evolution_3.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/FicheCours.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\FicheCours.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/FicheCoursPetit.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\FicheCoursPetit.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/FlechePositionQCM.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\FlechePositionQCM.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/FlecheProfEntrant.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\FlecheProfEntrant.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/fleche_bas.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\fleche_bas.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/fleche_haut.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\fleche_haut.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/HachureGriseCoursSuperposes.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\HachureGriseCoursSuperposes.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/HachureGriseCoursSuperposesPourDiag.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\HachureGriseCoursSuperposesPourDiag.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/HachureNoir.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\HachureNoir.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/hp-bg-desktop.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\hp-bg-desktop.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/hp-logo-desktop.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\hp-logo-desktop.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/hp-logo-mobile.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\hp-logo-mobile.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/hyperplanning-generique.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\hyperplanning-generique.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/icone-pdf.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\icone-pdf.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/ImagePourListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\ImagePourListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/Motifs.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\Motifs.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/qcmDefinirTrou14.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\qcmDefinirTrou14.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/QcmDrapeauRessenti.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\QcmDrapeauRessenti.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/resize.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\resize.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/SonPourListePause.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\SonPourListePause.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/images/SonPourListePlay.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\images\SonPourListePlay.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/Produit/css/curseurs/CurseurDoubleClic.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\Produit\css\curseurs\CurseurDoubleClic.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/Produit/css/curseurs/CurseurMethodeCalculMoyenne.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\Produit\css\curseurs\CurseurMethodeCalculMoyenne.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/Produit/css/curseurs/CurseurPinceauRouge.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\Produit\css\curseurs\CurseurPinceauRouge.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040/Produit/css/curseurs/CurseurPinceauVert.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_DEB26C3E7738A7BA4BF8C2FE5FDC7170938424096AE0E27C463A30938B055D95_L_1040\Produit\css\curseurs\CurseurPinceauVert.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_1_C_E673A00535A6A876A269D970D99AA31BD6897A346B424D706EC4207188AC9B2C_L_1040/etudiant_ext.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C_E673A00535A6A876A269D970D99AA31BD6897A346B424D706EC4207188AC9B2C_L_1040\etudiant_ext.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_1_C__L_1040/imagesconnexion.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_1_C__L_1040\imagesconnexion.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_11624992E018262317B06A3EF0E7F480163E2DA43C262EB7EC023E0815350FC1_L_1040/traductions.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_11624992E018262317B06A3EF0E7F480163E2DA43C262EB7EC023E0815350FC1_L_1040\traductions.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/espace/css/administratif.css
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\espace\css\administratif.css
+Content Type: text/css
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/attention.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\attention.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/background.jpg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\background.jpg
+Content Type: image/jpeg
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/Checkbox_Coche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\Checkbox_Coche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/Checkbox_Decoche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\Checkbox_Decoche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/CheckRadio_Coche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\CheckRadio_Coche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/CheckRadio_Decoche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\CheckRadio_Decoche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/CocheCroixRouge.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\CocheCroixRouge.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/CocheVerte.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\CocheVerte.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/CopierPourListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\CopierPourListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/CurseurDeTri.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\CurseurDeTri.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/DeploiementListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\DeploiementListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/DevoirRefait.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\DevoirRefait.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/espace-academie.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\espace-academie.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/espace-administration-console.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\espace-administration-console.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/espace-appariteur.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\espace-appariteur.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/espace-direction.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\espace-direction.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/espace-eleve.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\espace-eleve.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/espace-entreprise.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\espace-entreprise.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/espace-invite.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\espace-invite.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/espace-parent.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\espace-parent.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/espace-professeur.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\espace-professeur.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/espace-vie-scolaire.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\espace-vie-scolaire.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/etoiles_on_off.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\etoiles_on_off.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/evolution_1.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\evolution_1.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/evolution_2.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\evolution_2.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/evolution_3.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\evolution_3.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/FicheCours.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\FicheCours.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/FicheCoursPetit.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\FicheCoursPetit.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/FlechePositionQCM.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\FlechePositionQCM.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/FlecheProfEntrant.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\FlecheProfEntrant.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/fleche_bas.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\fleche_bas.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/fleche_haut.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\fleche_haut.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/HachureGriseCoursSuperposes.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\HachureGriseCoursSuperposes.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/HachureGriseCoursSuperposesPourDiag.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\HachureGriseCoursSuperposesPourDiag.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/HachureNoir.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\HachureNoir.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/hp-bg-desktop.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\hp-bg-desktop.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/hp-logo-desktop.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\hp-logo-desktop.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/hp-logo-mobile.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\hp-logo-mobile.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/hyperplanning-generique.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\hyperplanning-generique.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/icone-pdf.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\icone-pdf.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/ImagePourListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\ImagePourListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/Motifs.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\Motifs.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/qcmDefinirTrou14.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\qcmDefinirTrou14.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/QcmDrapeauRessenti.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\QcmDrapeauRessenti.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/resize.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\resize.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/SonPourListePause.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\SonPourListePause.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/images/SonPourListePlay.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\images\SonPourListePlay.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/Produit/css/curseurs/CurseurDoubleClic.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\Produit\css\curseurs\CurseurDoubleClic.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/Produit/css/curseurs/CurseurMethodeCalculMoyenne.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\Produit\css\curseurs\CurseurMethodeCalculMoyenne.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/Produit/css/curseurs/CurseurPinceauRouge.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\Produit\css\curseurs\CurseurPinceauRouge.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040/Produit/css/curseurs/CurseurPinceauVert.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_27B56F7E880A63D1877456481675FC4B598B0A3C6D562EB420605DA1BEE3858E_L_1040\Produit\css\curseurs\CurseurPinceauVert.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_479F700F1707134C41BF031B42BE62ABADFD99343A420B17A47D3F049A376A20_L_1040/administratif.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_479F700F1707134C41BF031B42BE62ABADFD99343A420B17A47D3F049A376A20_L_1040\administratif.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_7_C_E673A00535A6A876A269D970D99AA31BD6897A346B424D706EC4207188AC9B2C_L_1040/administratif_ext.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C_E673A00535A6A876A269D970D99AA31BD6897A346B424D706EC4207188AC9B2C_L_1040\administratif_ext.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_7_C__L_1040/imagesconnexion.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_7_C__L_1040\imagesconnexion.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_8C27BAFCF7EE97336910FE4A8B62F030A83FE9CAF61B29439B4EC714873C1723_L_1040/traductions.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_8C27BAFCF7EE97336910FE4A8B62F030A83FE9CAF61B29439B4EC714873C1723_L_1040\traductions.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_CF2BE54719137CA8DA3E96A993A6761077C9434EA11804E10F3567F4837579E9_L_1040/appariteur.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_CF2BE54719137CA8DA3E96A993A6761077C9434EA11804E10F3567F4837579E9_L_1040\appariteur.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/espace/css/appariteur.css
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\espace\css\appariteur.css
+Content Type: text/css
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/attention.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\attention.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/background.jpg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\background.jpg
+Content Type: image/jpeg
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/Checkbox_Coche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\Checkbox_Coche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/Checkbox_Decoche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\Checkbox_Decoche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/CheckRadio_Coche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\CheckRadio_Coche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/CheckRadio_Decoche_Fenetre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\CheckRadio_Decoche_Fenetre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/CocheCroixRouge.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\CocheCroixRouge.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/CocheVerte.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\CocheVerte.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/CopierPourListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\CopierPourListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/CurseurDeTri.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\CurseurDeTri.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/DeploiementListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\DeploiementListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/DevoirRefait.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\DevoirRefait.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/espace-academie.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\espace-academie.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/espace-administration-console.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\espace-administration-console.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/espace-appariteur.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\espace-appariteur.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/espace-direction.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\espace-direction.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/espace-eleve.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\espace-eleve.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/espace-entreprise.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\espace-entreprise.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/espace-invite.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\espace-invite.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/espace-parent.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\espace-parent.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/espace-professeur.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\espace-professeur.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/espace-vie-scolaire.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\espace-vie-scolaire.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/etoiles_on_off.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\etoiles_on_off.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/evolution_1.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\evolution_1.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/evolution_2.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\evolution_2.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/evolution_3.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\evolution_3.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/FicheCours.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\FicheCours.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/FicheCoursPetit.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\FicheCoursPetit.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/FlechePositionQCM.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\FlechePositionQCM.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/FlecheProfEntrant.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\FlecheProfEntrant.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/fleche_bas.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\fleche_bas.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/fleche_haut.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\fleche_haut.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/HachureGriseCoursSuperposes.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\HachureGriseCoursSuperposes.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/HachureGriseCoursSuperposesPourDiag.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\HachureGriseCoursSuperposesPourDiag.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/HachureNoir.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\HachureNoir.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/hp-bg-desktop.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\hp-bg-desktop.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/hp-logo-desktop.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\hp-logo-desktop.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/hp-logo-mobile.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\hp-logo-mobile.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/hyperplanning-generique.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\hyperplanning-generique.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/icone-pdf.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\icone-pdf.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/ImagePourListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\ImagePourListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/Motifs.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\Motifs.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/qcmDefinirTrou14.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\qcmDefinirTrou14.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/QcmDrapeauRessenti.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\QcmDrapeauRessenti.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/resize.gif
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\resize.gif
+Content Type: image/gif
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/SonPourListePause.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\SonPourListePause.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/images/SonPourListePlay.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\images\SonPourListePlay.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/Produit/css/curseurs/CurseurDoubleClic.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\Produit\css\curseurs\CurseurDoubleClic.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/Produit/css/curseurs/CurseurMethodeCalculMoyenne.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\Produit\css\curseurs\CurseurMethodeCalculMoyenne.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/Produit/css/curseurs/CurseurPinceauRouge.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\Produit\css\curseurs\CurseurPinceauRouge.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040/Produit/css/curseurs/CurseurPinceauVert.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_DA5E2DDD9BE3F0448CA7DC42F8EC93FE48047A0E6AD116AA016F728340CE8445_L_1040\Produit\css\curseurs\CurseurPinceauVert.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/E_8_C_E673A00535A6A876A269D970D99AA31BD6897A346B424D706EC4207188AC9B2C_L_1040/appariteur_ext.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C_E673A00535A6A876A269D970D99AA31BD6897A346B424D706EC4207188AC9B2C_L_1040\appariteur_ext.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/E_8_C__L_1040/imagesconnexion.js
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\E_8_C__L_1040\imagesconnexion.js
+Content Type: application/x-javascript
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/AlerteMiseAJourHP.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\AlerteMiseAJourHP.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/AppelFait.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\AppelFait.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/AppelVerrouFait.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\AppelVerrouFait.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/AppelVerrouNonFait.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\AppelVerrouNonFait.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/Attention.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\Attention.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/AucuneNouvelleNotif.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\AucuneNouvelleNotif.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/BaseDeConnaissance.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\BaseDeConnaissance.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/BtnOneDrive.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\BtnOneDrive.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/BtnOneNote.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\BtnOneNote.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/CasierCorrige.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\CasierCorrige.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/ColonneOutil.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\ColonneOutil.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/CompteEtablissement.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\CompteEtablissement.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/CourrierEnvoye.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\CourrierEnvoye.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/CourrierErreur.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\CourrierErreur.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/CourrierNonEnvoye.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\CourrierNonEnvoye.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/CourrierSpam.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\CourrierSpam.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/CroixFermer.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\CroixFermer.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/CurseurAssistantActive.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\CurseurAssistantActive.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/CurseurClicDroit.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\CurseurClicDroit.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/CurseurPeriodeCloturee.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\CurseurPeriodeCloturee.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/CurseurPinceauGris.cur
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\CurseurPinceauGris.cur
+Content Type: image/bmp
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/DeploiementBandeau.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\DeploiementBandeau.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/DestinataireCourrier.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\DestinataireCourrier.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/DestinataireEmailActif.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\DestinataireEmailActif.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/DestinataireEmailInactif.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\DestinataireEmailInactif.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/DestinatairePapierActif.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\DestinatairePapierActif.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/DestinatairePapierInactif.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\DestinatairePapierInactif.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/EtatAnnule.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\EtatAnnule.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/FicheCoursMonsieurFiche.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\FicheCoursMonsieurFiche.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/FichierExtensionArchive.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\FichierExtensionArchive.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/FichierExtensionExcel.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\FichierExtensionExcel.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/FichierExtensionImage.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\FichierExtensionImage.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/FichierExtensionInconnu.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\FichierExtensionInconnu.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/FichierExtensionPage.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\FichierExtensionPage.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/FichierExtensionPPT.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\FichierExtensionPPT.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/FichierExtensionSon.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\FichierExtensionSon.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/FichierExtensionTexte.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\FichierExtensionTexte.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/FichierExtensionVideo.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\FichierExtensionVideo.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/flagBE.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\flagBE.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/flagCA.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\flagCA.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/flagCH.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\flagCH.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/flagDE.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\flagDE.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/flagES.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\flagES.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/flagFR.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\flagFR.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/flagGB.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\flagGB.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/flagIT.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\flagIT.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/flagMA.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\flagMA.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/flagNL.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\flagNL.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/flagUS.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\flagUS.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/FlecheSortie.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\FlecheSortie.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/HoraireCoursGrille.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\HoraireCoursGrille.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IconeChangerListe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IconeChangerListe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IconeClientEDT.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IconeClientEDT.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IconeClientPN.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IconeClientPN.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IconeConfidentiel.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IconeConfidentiel.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IconeDS.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IconeDS.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IconeFinanceur.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IconeFinanceur.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IconeHebergeur.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IconeHebergeur.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IconePerceveur.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IconePerceveur.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IconePersonnalise.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IconePersonnalise.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IconePNNet.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IconePNNet.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IconeQCM.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IconeQCM.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IconeRelaisEDT.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IconeRelaisEDT.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IconeRelaisPN.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IconeRelaisPN.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/InsertionSiteWeb6Etats.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\InsertionSiteWeb6Etats.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IntervertirLigneDerriere.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IntervertirLigneDerriere.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/IntervertirLigneDevant.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\IntervertirLigneDevant.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/LogoBox.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\LogoBox.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/LogoCloudPronote.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\LogoCloudPronote.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/LogoDigiposte.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\LogoDigiposte.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/LogoDropBox.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\LogoDropBox.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/LogoGoogleDrive.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\LogoGoogleDrive.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/LogoHubic.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\LogoHubic.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/LogoHyperplanningBarreHaut.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\LogoHyperplanningBarreHaut.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/LogoIndexFairePatienter.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\LogoIndexFairePatienter.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/LogoOneDrive.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\LogoOneDrive.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/LogoPentila.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\LogoPentila.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/LogoRGPD.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\LogoRGPD.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/MessagerieBloquee.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\MessagerieBloquee.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/MessagerieGroupe.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\MessagerieGroupe.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/OeilBarre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\OeilBarre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/OuvrirCalendrier.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\OuvrirCalendrier.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/PaletteDesCouleurs.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\PaletteDesCouleurs.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/PassageAuPrecedentPourBandeau.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\PassageAuPrecedentPourBandeau.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/PassageAuSuivantPourBandeau.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\PassageAuSuivantPourBandeau.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/PointRougeEnRelief.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\PointRougeEnRelief.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/PortraitSilhouette.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\PortraitSilhouette.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/PostIt.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\PostIt.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/PostIt1EtatExpire.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\PostIt1EtatExpire.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/PostItPlusTrombone.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\PostItPlusTrombone.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/PostItVide.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\PostItVide.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/ProfesseurADesigner.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\ProfesseurADesigner.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/qcmAssociation2infos.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\qcmAssociation2infos.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/qcmChoixMultiplesCocher.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\qcmChoixMultiplesCocher.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/qcmChoixUniqueRadio.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\qcmChoixUniqueRadio.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/QcmChrono.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\QcmChrono.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/qcmListeCahierTexte.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\qcmListeCahierTexte.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/qcmListeDevoir.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\qcmListeDevoir.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/qcmReponseASaisir.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\qcmReponseASaisir.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/qcmReponseASaisirNumerique.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\qcmReponseASaisirNumerique.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/qcmReponseASaisirTexte.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\qcmReponseASaisirTexte.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/qcmTexteATrou1liste.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\qcmTexteATrou1liste.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/qcmTexteATrou1listeparTrou.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\qcmTexteATrou1listeparTrou.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/qcmTexteATrouSaisie.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\qcmTexteATrouSaisie.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/Remuneration.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\Remuneration.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/StickerDispense.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\StickerDispense.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/VerrouJauneBarre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\VerrouJauneBarre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/VerrouPeriodeActiveGris.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\VerrouPeriodeActiveGris.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/VerrouPetit.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\VerrouPetit.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/VerrouRougeBarre.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\VerrouRougeBarre.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/Visa.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\Visa.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/VisaEtablissement.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\VisaEtablissement.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/FichiersRessource/VisaInspecteur.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\FichiersRessource\VisaInspecteur.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/fonts/Educ-Font.eot?h=d9ace73a7798b44f7b0030efb01931a9
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\fonts\Educ-Font.eot
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/fonts/Educ-Font.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\fonts\Educ-Font.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/fonts/Educ-Font.ttf?h=d9ace73a7798b44f7b0030efb01931a9
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\fonts\Educ-Font.ttf
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/fonts/Educ-Font.woff2?h=d9ace73a7798b44f7b0030efb01931a9
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\fonts\Educ-Font.woff2
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/fonts/Educ-Font.woff?h=d9ace73a7798b44f7b0030efb01931a9
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\fonts\Educ-Font.woff
+Content Type: application/octet-stream
+
+Uri: https://orario.cfpcemon.it:444/genitori?fd=1
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\genitori.html
+Content Type: text/html
+
+Uri: https://orario.cfpcemon.it:444/images/apple-touch-icon.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\images\apple-touch-icon.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/images/favicon-16x16.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\images\favicon-16x16.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/images/favicon-32x32.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\images\favicon-32x32.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/images/favicon.svg
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\images\favicon.svg
+Content Type: image/svg+xml
+
+Uri: https://orario.cfpcemon.it:444/images/manifest.json
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\images\manifest.json
+Content Type: application/json
+
+Uri: https://orario.cfpcemon.it:444/images/QcmDefinirTrou.png
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\images\QcmDefinirTrou.png
+Content Type: image/png
+
+Uri: https://orario.cfpcemon.it:444/segreteria?fd=1
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\segreteria.html
+Content Type: text/html
+
+Uri: https://orario.cfpcemon.it:444/studenti?fd=1
+File Name: C:\Users\enric\Desktop\orario.cfpcemon.it\studenti.html
+Content Type: text/html
+

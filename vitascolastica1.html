@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Presenze</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        input[type="button"] {
+            padding: 5px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+        .notifica {
+            margin-left: 10px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Gestione Presenze</h1>
+<table id="tabellaPresenze">
+    <thead>
+        <tr>
+            <th>Nome Studente</th>
+            <th>Presenze</th>
+            <th>Assenze</th>
+            <th>Ritardi</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+    <tbody id="tbodyPresenze">
+    </tbody>
+</table>
+
+<script>
+    const studenti = [
+        "Stellina Dematteis",
+        "Tartaruga Dematteis",
+        "Yucky Benua",
+        "Lollo Benua",
+        "Leonard Benua",
+        "Sparcky Benua",
+        "Flaffy Dematteis",
+        "Tina Dematteis",
+        "Grigetta Benua",
+        "Luna Dematteis",
+        "Luna Benua",
+        "Kendy Dematteis",
+        "Papero Benua",
+        "Curt Dematteis",
+        "Briciola Dematteis",
+        "Lampo Benua"
+    ];
+
+    // Carica le presenze dal localStorage al caricamento della pagina
+    window.onload = function() {
+        const presenze = JSON.parse(localStorage.getItem('presenze')) || {};
+        studenti.forEach(nome => {
+            if (!presenze[nome]) {
+                presenze[nome] = { presente: 0, assente: 0, ritardo: 0 };
+            }
+            aggiungiPresenzaTabella(nome, presenze[nome]);
+        });
+    };
+
+    function aggiungiPresenzaTabella(nome, conteggio) {
+        const tbody = document.getElementById('tbodyPresenze');
+        const tr = document.createElement('tr');
+
+        // Crea cella per il nome dello studente
+        const tdStudente = document.createElement('td');
+        tdStudente.textContent = nome;
+        tr.appendChild(tdStudente);
+
+        // Crea cella per presenze
+        const tdPresente = document.createElement('td');
+        tdPresente.textContent = conteggio.presente;
+        tr.appendChild(tdPresente);
+
+        // Crea cella per assenze
+        const tdAssente = document.createElement('td');
+        tdAssente.textContent = conteggio.assente;
+        tr.appendChild(tdAssente);
+
+        // Crea cella per ritardi
+        const tdRitardo = document.createElement('td');
+        tdRitardo.textContent = conteggio.ritardo;
+        tr.appendChild(tdRitardo);
+
+        // Crea cella per azioni
+        const tdAzioni = document.createElement('td');
+
+        // Pulsante Presente
+        const btnPresente = document.createElement('input');
+        btnPresente.type = 'button';
+        btnPresente.value = 'Presente';
+        btnPresente.onclick = () => aggiornaConteggio(nome, 'presente');
+        tdAzioni.appendChild(btnPresente);
+
+        // Notifica per Presente
+        const notificaPresente = document.createElement('span');
+        notificaPresente.className = 'notifica';
+        tdAzioni.appendChild(notificaPresente);
+
+        // Pulsante Assente
+        const btnAssente = document.createElement('input');
+        btnAssente.type = 'button';
+        btnAssente.value = 'Assente';
+        btnAssente.onclick = () => aggiornaConteggio(nome, 'assente');
+        tdAzioni.appendChild(btnAssente);
+
+        // Notifica per Assente
+        const notificaAssente = document.createElement('span');
+        notificaAssente.className = 'notifica';
+        tdAzioni.appendChild(notificaAssente);
+
+        // Pulsante In Ritardo
+        const btnRitardo = document.createElement('input');
+        btnRitardo.type = 'button';
+        btnRitardo.value = 'In Ritardo';
+        btnRitardo.onclick = () => aggiornaConteggio(nome, 'ritardo');
+        tdAzioni.appendChild(btnRitardo);
+
+        // Notifica per Ritardo
+        const notificaRitardo = document.createElement('span');
+        notificaRitardo.className = 'notifica';
+        tdAzioni.appendChild(notificaRitardo);
+
+        tr.appendChild(tdAzioni);
+        tbody.appendChild(tr);
+    }
+
+    function aggiornaConteggio(nome, tipo) {
+        const presenze = JSON.parse(localStorage.getItem('presenze')) || {};
+        
+        if (!presenze[nome]) {
+            presenze[nome] = { presente: 0, assente: 0, ritardo: 0 };
+        }
+
+        presenze[nome][tipo] += 1; // Incrementa il conteggio per il tipo selezionato
+
+        // Aggiorna il localStorage
+        localStorage.setItem('presenze', JSON.stringify(presenze));
+
+        // Ricarica la tabella
+        ricaricaTabella(presenze);
+    }
+
+    function ricaricaTabella(presenze) {
+        const tbody = document.getElementById('tbodyPresenze');
+        tbody.innerHTML = ''; // Pulisce la tabella esistente
+
+        // Ricrea la tabella con i conteggi aggiornati
+        studenti.forEach(nome => {
+            aggiungiPresenzaTabella(nome, presenze[nome]);
+        });
+
+        // Mostra notifiche accanto ai pulsanti
+        const btns = tbody.querySelectorAll('input[type="button"]');
+        btns.forEach(btn => {
+            btn.onclick = function() {
+                const notifica = btn.nextElementSibling;
+                if (btn.value === 'Presente') {
+                    notifica.textContent = "1 Presenza Registrata";
+                } else if (btn.value === 'Assente') {
+                    notifica.textContent = "1 Assenza Registrata";
+                } else if (btn.value === 'In Ritardo') {
+                    notifica.textContent = "1 Ritardo Registrato";
+                }
+                setTimeout(() => {
+                    notifica.textContent = ""; // Rimuovi la notifica dopo 2 secondi
+                }, 2000);
+            };
+        });
+    }
+</script>
+
+</body>
+</html>

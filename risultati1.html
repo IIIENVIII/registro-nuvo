@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risultati 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        input[type="text"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        input[type="button"] {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Inserisci una Verifica</h1>
+<label for="materia">Materia:</label>
+<input type="text" id="materia" placeholder="Inserisci materia">
+
+<label for="data">Data:</label>
+<input type="date" id="data">
+
+<label for="descrizione">Descrizione:</label>
+<input type="text" id="descrizione" placeholder="Descrizione">
+
+<input type="button" value="Crea Verifica" onclick="creaVerifica()">
+<input type="button" value="Salva Voti" onclick="salvaVoti()">
+
+<h2>Voti Inseriti</h2>
+<table id="tabellaRisultati">
+    <thead>
+        <tr>
+            <th>Nome Studente</th>
+            <th>Materia</th>
+            <th>Data</th>
+            <th>Descrizione</th>
+            <th>Voto</th>
+        </tr>
+    </thead>
+    <tbody id="tbodyRisultati">
+    </tbody>
+</table>
+
+<script>
+    const studenti = [
+        "Stellina Dematteis",
+        "Tartaruga Dematteis",
+        "Yucky Benua",
+        "Lollo Benua",
+        "Leonard Benua",
+        "Sparcky Benua",
+        "Flaffy Dematteis",
+        "Tina Dematteis",
+        "Grigetta Benua",
+        "Luna Dematteis",
+        "Luna Benua",
+        "Kendy Dematteis",
+        "Papero Benua",
+        "Curt Dematteis",
+        "Briciola Dematteis",
+        "Lampo Benua"
+    ];
+
+    // Carica i risultati dal localStorage al caricamento della pagina
+    window.onload = function() {
+        const risultati = JSON.parse(localStorage.getItem('risultati')) || [];
+        risultati.forEach(risultato => aggiungiRisultatoTabella(risultato));
+    };
+
+    function creaVerifica() {
+        const materia = document.getElementById('materia').value;
+        const data = document.getElementById('data').value;
+        const descrizione = document.getElementById('descrizione').value;
+
+        if (materia && data && descrizione) {
+            // Aggiungi la verifica a tutti gli studenti
+            studenti.forEach(studente => {
+                const risultato = { studente, materia, data, descrizione, voto: null };
+                aggiungiRisultatoTabella(risultato);
+            });
+
+            // Salva i risultati nel localStorage
+            salvaRisultati();
+        } else {
+            alert("Per favore, compila tutti i campi necessari.");
+        }
+    }
+
+    function aggiungiRisultatoTabella(risultato) {
+        const tbody = document.getElementById('tbodyRisultati');
+        const tr = document.createElement('tr');
+        
+        // Crea una cella per ogni campo
+        const tdStudente = document.createElement('td');
+        tdStudente.textContent = risultato.studente;
+        tr.appendChild(tdStudente);
+        
+        const tdMateria = document.createElement('td');
+        tdMateria.textContent = risultato.materia;
+        tr.appendChild(tdMateria);
+        
+        const tdData = document.createElement('td');
+        tdData.textContent = risultato.data;
+        tr.appendChild(tdData);
+        
+        const tdDescrizione = document.createElement('td');
+        tdDescrizione.textContent = risultato.descrizione;
+        tr.appendChild(tdDescrizione);
+        
+        const tdVoto = document.createElement('td');
+        const inputVoto = document.createElement('input');
+        inputVoto.type = 'text'; // Cambiato in tipo text per accettare anche "ass" e "eson"
+        inputVoto.placeholder = 'Voto (10-100, ass, eson)';
+        inputVoto.id = `voto-${risultato.studente}`;
+        if (risultato.voto !== null) inputVoto.value = risultato.voto; // Imposta il valore se presente
+        tdVoto.appendChild(inputVoto);
+        tr.appendChild(tdVoto);
+        
+        tbody.appendChild(tr);
+    }
+
+    function salvaVoti() {
+        const tbody = document.getElementById('tbodyRisultati');
+        const risultati = Array.from(tbody.children).map(tr => {
+            const td = Array.from(tr.children);
+            const votoInput = td[4].querySelector('input');
+            return {
+                studente: td[0].textContent,
+                materia: td[1].textContent,
+                data: td[2].textContent,
+                descrizione: td[3].textContent,
+                voto: votoInput ? votoInput.value : null // Salva il voto come stringa
+            };
+        });
+
+        localStorage.setItem('risultati', JSON.stringify(risultati));
+        alert("Voti salvati con successo!");
+    }
+
+    function salvaRisultati() {
+        const tbody = document.getElementById('tbodyRisultati');
+        const risultati = Array.from(tbody.children).map(tr => {
+            const td = Array.from(tr.children);
+            return {
+                studente: td[0].textContent,
+                materia: td[1].textContent,
+                data: td[2].textContent,
+                descrizione: td[3].textContent,
+                voto: null // Inizialmente senza voto
+            };
+        });
+
+        localStorage.setItem('risultati', JSON.stringify(risultati));
+    }
+</script>
+
+</body>
+</html>
