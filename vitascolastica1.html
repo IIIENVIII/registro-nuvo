@@ -106,16 +106,19 @@
         // Crea cella per presenze
         const tdPresente = document.createElement('td');
         tdPresente.textContent = conteggio.presente;
+        tdPresente.id = `presente-${nome}`; // ID per aggiornamento diretto
         tr.appendChild(tdPresente);
 
         // Crea cella per assenze
         const tdAssente = document.createElement('td');
         tdAssente.textContent = conteggio.assente;
+        tdAssente.id = `assente-${nome}`; // ID per aggiornamento diretto
         tr.appendChild(tdAssente);
 
         // Crea cella per ritardi
         const tdRitardo = document.createElement('td');
         tdRitardo.textContent = conteggio.ritardo;
+        tdRitardo.id = `ritardo-${nome}`; // ID per aggiornamento diretto
         tr.appendChild(tdRitardo);
 
         // Crea cella per azioni
@@ -128,22 +131,12 @@
         btnPresente.onclick = () => aggiornaConteggio(nome, 'presente');
         tdAzioni.appendChild(btnPresente);
 
-        // Notifica per Presente
-        const notificaPresente = document.createElement('span');
-        notificaPresente.className = 'notifica';
-        tdAzioni.appendChild(notificaPresente);
-
         // Pulsante Assente
         const btnAssente = document.createElement('input');
         btnAssente.type = 'button';
         btnAssente.value = 'Assente';
         btnAssente.onclick = () => aggiornaConteggio(nome, 'assente');
         tdAzioni.appendChild(btnAssente);
-
-        // Notifica per Assente
-        const notificaAssente = document.createElement('span');
-        notificaAssente.className = 'notifica';
-        tdAzioni.appendChild(notificaAssente);
 
         // Pulsante In Ritardo
         const btnRitardo = document.createElement('input');
@@ -152,18 +145,13 @@
         btnRitardo.onclick = () => aggiornaConteggio(nome, 'ritardo');
         tdAzioni.appendChild(btnRitardo);
 
-        // Notifica per Ritardo
-        const notificaRitardo = document.createElement('span');
-        notificaRitardo.className = 'notifica';
-        tdAzioni.appendChild(notificaRitardo);
-
         tr.appendChild(tdAzioni);
         tbody.appendChild(tr);
     }
 
     function aggiornaConteggio(nome, tipo) {
         const presenze = JSON.parse(localStorage.getItem('presenze')) || {};
-        
+
         if (!presenze[nome]) {
             presenze[nome] = { presente: 0, assente: 0, ritardo: 0 };
         }
@@ -173,43 +161,10 @@
         // Aggiorna il localStorage
         localStorage.setItem('presenze', JSON.stringify(presenze));
 
-        // Aggiorna la tabella senza svuotarla
-        aggiornaTabella(nome, presenze[nome]);
+        // Aggiorna solo il campo specifico
+        document.getElementById(`${tipo}-${nome}`).textContent = presenze[nome][tipo];
     }
 
-    function aggiornaTabella(nome, conteggio) {
-        const tbody = document.getElementById('tbodyPresenze');
-        const rows = tbody.getElementsByTagName('tr');
-
-        for (let row of rows) {
-            const tdNome = row.getElementsByTagName('td')[0];
-            if (tdNome.textContent === nome) {
-                // Aggiorna i conteggi senza rimuovere gli altri studenti
-                row.cells[1].textContent = conteggio.presente;
-                row.cells[2].textContent = conteggio.assente;
-                row.cells[3].textContent = conteggio.ritardo;
-                break;
-            }
-        }
-
-        // Mostra notifiche accanto ai pulsanti
-        const btns = tbody.querySelectorAll('input[type="button"]');
-        btns.forEach(btn => {
-            btn.onclick = function() {
-                const notifica = btn.nextElementSibling;
-                if (btn.value === 'Presente') {
-                    notifica.textContent = "1 Presenza Registrata";
-                } else if (btn.value === 'Assente') {
-                    notifica.textContent = "1 Assenza Registrata";
-                } else if (btn.value === 'In Ritardo') {
-                    notifica.textContent = "1 Ritardo Registrato";
-                }
-                setTimeout(() => {
-                    notifica.textContent = ""; // Rimuovi la notifica dopo 2 secondi
-                }, 2000);
-            };
-        });
-    }
 </script>
 
 </body>
