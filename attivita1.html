@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attività Studente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gestione Studente</h1>
+
+    <!-- Form per inserire nome studente, motivazione e scelta tra censura, ammonizione e sospensione -->
+    <form id="studentForm">
+        <label for="nome">Nome Studente:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="motivazione">Motivazione:</label>
+        <input type="text" id="motivazione" name="motivazione" required><br><br>
+
+        <label for="azione">Azione Disciplinare:</label><br>
+        <input type="radio" id="censura" name="azione" value="Censura" required>
+        <label for="censura">Censura</label><br>
+
+        <input type="radio" id="ammonizione" name="azione" value="Ammonizione">
+        <label for="ammonizione">Ammonizione</label><br>
+
+        <input type="radio" id="sospensione" name="azione" value="Sospensione">
+        <label for="sospensione">Sospensione</label><br><br>
+
+        <button type="button" onclick="aggiungiStudente()">Crea</button>
+    </form>
+
+    <!-- Tabella per visualizzare i dati inseriti -->
+    <h2>Tabella Studenti</h2>
+    <table id="tabellaStudenti">
+        <thead>
+            <tr>
+                <th>Nome Studente</th>
+                <th>Motivazione</th>
+                <th>Azione Disciplinare</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Righe aggiunte dinamicamente qui -->
+        </tbody>
+    </table>
+
+    <script>
+        function aggiungiStudente() {
+            // Prendere i valori dal form
+            var nome = document.getElementById('nome').value;
+            var motivazione = document.getElementById('motivazione').value;
+            var azione = document.querySelector('input[name="azione"]:checked').value;
+
+            // Creare una nuova riga nella tabella
+            var tabella = document.getElementById('tabellaStudenti').getElementsByTagName('tbody')[0];
+            var nuovaRiga = tabella.insertRow();
+
+            // Creare le celle per la nuova riga
+            var cellaNome = nuovaRiga.insertCell(0);
+            var cellaMotivazione = nuovaRiga.insertCell(1);
+            var cellaAzione = nuovaRiga.insertCell(2);
+
+            // Inserire i valori nelle celle
+            cellaNome.innerHTML = nome;
+            cellaMotivazione.innerHTML = motivazione;
+            cellaAzione.innerHTML = azione;
+
+            // Resettare il form dopo l'inserimento
+            document.getElementById('studentForm').reset();
+        }
+    </script>
+
+</body>
+</html>
