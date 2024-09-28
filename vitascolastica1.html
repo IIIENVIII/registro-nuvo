@@ -173,18 +173,24 @@
         // Aggiorna il localStorage
         localStorage.setItem('presenze', JSON.stringify(presenze));
 
-        // Ricarica la tabella
-        ricaricaTabella(presenze);
+        // Aggiorna la tabella senza svuotarla
+        aggiornaTabella(nome, presenze[nome]);
     }
 
-    function ricaricaTabella(presenze) {
+    function aggiornaTabella(nome, conteggio) {
         const tbody = document.getElementById('tbodyPresenze');
-        tbody.innerHTML = ''; // Pulisce la tabella esistente
+        const rows = tbody.getElementsByTagName('tr');
 
-        // Ricrea la tabella con i conteggi aggiornati
-        studenti.forEach(nome => {
-            aggiungiPresenzaTabella(nome, presenze[nome]);
-        });
+        for (let row of rows) {
+            const tdNome = row.getElementsByTagName('td')[0];
+            if (tdNome.textContent === nome) {
+                // Aggiorna i conteggi senza rimuovere gli altri studenti
+                row.cells[1].textContent = conteggio.presente;
+                row.cells[2].textContent = conteggio.assente;
+                row.cells[3].textContent = conteggio.ritardo;
+                break;
+            }
+        }
 
         // Mostra notifiche accanto ai pulsanti
         const btns = tbody.querySelectorAll('input[type="button"]');
