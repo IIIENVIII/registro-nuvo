@@ -70,10 +70,9 @@
         "Robottina Carottini",
     ];
 
-    // Carica le presenze dal localStorage al caricamento della pagina
+    // Al caricamento della pagina, aggiungi tutti gli studenti alla tabella
     window.onload = function() {
-        const presenze = JSON.parse(localStorage.getItem('presenze')) || [];
-        presenze.forEach(presenza => aggiungiPresenzaTabella(presenza));
+        studenti.forEach(studente => aggiungiPresenzaTabella(studente));
     };
 
     function aggiungiPresenzaTabella(nome) {
@@ -117,7 +116,7 @@
 
     function aggiornaConteggio(nome, tipo) {
         const presenze = JSON.parse(localStorage.getItem('presenze')) || {};
-        
+
         if (!presenze[nome]) {
             presenze[nome] = { presente: 0, assente: 0, ritardo: 0 };
         }
@@ -131,6 +130,3 @@
         alert(`${tipo.charAt(0).toUpperCase() + tipo.slice(1)} registrata per ${nome}`);
     }
 </script>
-
-</body>
-</html>
