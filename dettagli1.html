@@ -72,10 +72,11 @@
 
     // Al caricamento della pagina, aggiungi tutti gli studenti alla tabella
     window.onload = function() {
-        studenti.forEach(studente => aggiungiPresenzaTabella(studente));
+        const presenze = JSON.parse(localStorage.getItem('presenze')) || {};
+        studenti.forEach(studente => aggiungiPresenzaTabella(studente, presenze[studente]));
     };
 
-    function aggiungiPresenzaTabella(nome) {
+    function aggiungiPresenzaTabella(nome, dati = {presente: 0, assente: 0, ritardo: 0}) {
         const tbody = document.getElementById('tbodyPresenze');
         const tr = document.createElement('tr');
 
@@ -84,37 +85,37 @@
         tdStudente.textContent = nome;
         tr.appendChild(tdStudente);
 
-        // Crea cella per presente
+        // Crea cella per presente con conteggio
         const tdPresente = document.createElement('td');
         const btnPresente = document.createElement('input');
         btnPresente.type = 'button';
-        btnPresente.value = 'Presente';
-        btnPresente.onclick = () => aggiornaConteggio(nome, 'presente');
+        btnPresente.value = `Presente (${dati.presente})`;
+        btnPresente.onclick = () => aggiornaConteggio(nome, 'presente', btnPresente, btnAssente, btnRitardo);
         tdPresente.appendChild(btnPresente);
         tr.appendChild(tdPresente);
 
-        // Crea cella per assente
+        // Crea cella per assente con conteggio
         const tdAssente = document.createElement('td');
         const btnAssente = document.createElement('input');
         btnAssente.type = 'button';
-        btnAssente.value = 'Assente';
-        btnAssente.onclick = () => aggiornaConteggio(nome, 'assente');
+        btnAssente.value = `Assente (${dati.assente})`;
+        btnAssente.onclick = () => aggiornaConteggio(nome, 'assente', btnPresente, btnAssente, btnRitardo);
         tdAssente.appendChild(btnAssente);
         tr.appendChild(tdAssente);
 
-        // Crea cella per in ritardo
+        // Crea cella per in ritardo con conteggio
         const tdRitardo = document.createElement('td');
         const btnRitardo = document.createElement('input');
         btnRitardo.type = 'button';
-        btnRitardo.value = 'In Ritardo';
-        btnRitardo.onclick = () => aggiornaConteggio(nome, 'ritardo');
+        btnRitardo.value = `In Ritardo (${dati.ritardo})`;
+        btnRitardo.onclick = () => aggiornaConteggio(nome, 'ritardo', btnPresente, btnAssente, btnRitardo);
         tdRitardo.appendChild(btnRitardo);
         tr.appendChild(tdRitardo);
 
         tbody.appendChild(tr);
     }
 
-    function aggiornaConteggio(nome, tipo) {
+    function aggiornaConteggio(nome, tipo, btnPresente, btnAssente, btnRitardo) {
         const presenze = JSON.parse(localStorage.getItem('presenze')) || {};
 
         if (!presenze[nome]) {
@@ -126,7 +127,12 @@
         // Aggiorna il localStorage
         localStorage.setItem('presenze', JSON.stringify(presenze));
 
-        // Aggiorna la visualizzazione
-        alert(`${tipo.charAt(0).toUpperCase() + tipo.slice(1)} registrata per ${nome}`);
+        // Aggiorna la visualizzazione dei bottoni con il nuovo conteggio
+        btnPresente.value = `Presente (${presenze[nome].presente})`;
+        btnAssente.value = `Assente (${presenze[nome].assente})`;
+        btnRitardo.value = `In Ritardo (${presenze[nome].ritardo})`;
     }
 </script>
+
+</body>
+</html>
