@@ -77,7 +77,7 @@
 </table>
 
 <script>
-    const studenti = [
+    const nuoviStudenti = [
         "Cane Dematteis",
         "Cane Benua",
         "Mician Dematteis",
@@ -89,10 +89,26 @@
         "Robottina Carottini"
     ];
 
-    // Carica i risultati dal localStorage al caricamento della pagina
+    const vecchiStudenti = JSON.parse(localStorage.getItem('risultati')) || [];
+
     window.onload = function() {
-        const risultati = JSON.parse(localStorage.getItem('risultati')) || [];
-        risultati.forEach(risultato => aggiungiRisultatoTabella(risultato));
+        // Mostra i risultati esistenti dei vecchi studenti
+        vecchiStudenti.forEach(risultato => aggiungiRisultatoTabella(risultato));
+
+        // Aggiungi i nuovi studenti alla tabella
+        nuoviStudenti.forEach(nuovoStudente => {
+            const esisteGia = vecchiStudenti.some(risultato => risultato.studente === nuovoStudente);
+            if (!esisteGia) {
+                const nuovoRisultato = {
+                    studente: nuovoStudente,
+                    materia: "",
+                    data: "",
+                    descrizione: "",
+                    voto: null
+                };
+                aggiungiRisultatoTabella(nuovoRisultato);
+            }
+        });
     };
 
     function creaVerifica() {
@@ -101,13 +117,12 @@
         const descrizione = document.getElementById('descrizione').value;
 
         if (materia && data && descrizione) {
-            // Aggiungi la verifica a tutti gli studenti
-            studenti.forEach(studente => {
+            nuoviStudenti.forEach(studente => {
                 const risultato = { studente, materia, data, descrizione, voto: null };
                 aggiungiRisultatoTabella(risultato);
             });
 
-            // Salva i risultati nel localStorage
+            // Salva i risultati aggiornati nel localStorage
             salvaRisultati();
         } else {
             alert("Per favore, compila tutti i campi necessari.");
@@ -137,10 +152,10 @@
         
         const tdVoto = document.createElement('td');
         const inputVoto = document.createElement('input');
-        inputVoto.type = 'text'; // Cambiato in tipo text per accettare anche "ass" e "eson"
+        inputVoto.type = 'text';
         inputVoto.placeholder = 'Voto (10-100, ass, eson)';
         inputVoto.id = `voto-${risultato.studente}`;
-        if (risultato.voto !== null) inputVoto.value = risultato.voto; // Imposta il valore se presente
+        if (risultato.voto !== null) inputVoto.value = risultato.voto;
         tdVoto.appendChild(inputVoto);
         tr.appendChild(tdVoto);
         
@@ -157,7 +172,7 @@
                 materia: td[1].textContent,
                 data: td[2].textContent,
                 descrizione: td[3].textContent,
-                voto: votoInput ? votoInput.value : null // Salva il voto come stringa
+                voto: votoInput ? votoInput.value : null
             };
         });
 
@@ -174,7 +189,7 @@
                 materia: td[1].textContent,
                 data: td[2].textContent,
                 descrizione: td[3].textContent,
-                voto: null // Inizialmente senza voto
+                voto: null
             };
         });
 
