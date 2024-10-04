@@ -150,13 +150,6 @@
 
         const tableBody = document.getElementById('verifiche-body');
 
-        // Aggiungi la materia e la data come intestazione di colonna
-        const headerRow = tableBody.querySelector('tr');
-        const newHeaderCell = document.createElement('th');
-        newHeaderCell.colSpan = 2; // Col span per Data e Materia
-        newHeaderCell.innerHTML = `${data}<br>${materia}`;
-        headerRow.appendChild(newHeaderCell);
-
         // Aggiungi le righe per ogni studente
         studenti[classe].forEach(nome => {
             const row = document.createElement('tr');
@@ -166,10 +159,10 @@
             nameCell.textContent = nome;
             row.appendChild(nameCell);
 
-            // Colonna voto
-            const votoCell = document.createElement('td');
-            votoCell.innerHTML = '<input type="number" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this)">';
-            row.appendChild(votoCell);
+            // Colonna per data e materia
+            const materiaCell = document.createElement('td');
+            materiaCell.innerHTML = `${data}<br>${materia}<br><input type="number" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this)">`;
+            row.appendChild(materiaCell);
 
             tableBody.appendChild(row);
         });
@@ -201,7 +194,7 @@
 
         [...document.getElementById('verifiche-body').rows].forEach(row => {
             const nome = row.cells[0].textContent;
-            const voto = row.cells[1].children[0].value;
+            const voto = row.cells[1].children[2].value; // Aggiunta per il voto
             verifiche.push({ nome, voto });
         });
 
@@ -224,13 +217,6 @@
         if (verifica) {
             const { data, materia, voti } = verifica;
 
-            // Aggiungi la materia e la data come intestazione di colonna
-            const headerRow = tableBody.querySelector('tr');
-            const newHeaderCell = document.createElement('th');
-            newHeaderCell.colSpan = 2; // Col span per Data e Materia
-            newHeaderCell.innerHTML = `${data}<br>${materia}`;
-            headerRow.appendChild(newHeaderCell);
-
             // Aggiungi le righe per ogni studente
             voti.forEach(voto => {
                 const row = document.createElement('tr');
@@ -240,10 +226,10 @@
                 nameCell.textContent = voto.nome;
                 row.appendChild(nameCell);
 
-                // Colonna voto
-                const votoCell = document.createElement('td');
-                votoCell.innerHTML = `<input type="number" min="0" max="100" placeholder="Voto" value="${voto.voto}" oninput="cambiaColore(this)">`;
-                row.appendChild(votoCell);
+                // Colonna per data e materia
+                const materiaCell = document.createElement('td');
+                materiaCell.innerHTML = `${data}<br>${materia}<br><input type="number" min="0" max="100" placeholder="Voto" value="${voto.voto}" oninput="cambiaColore(this)">`;
+                row.appendChild(materiaCell);
 
                 tableBody.appendChild(row);
             });
