@@ -134,10 +134,7 @@
         ]
     };
 
-    window.onload = function() {
-        caricaDati();
-    };
-
+    // Funzione per creare la tabella delle verifiche
     function creaTabella() {
         const classe = document.getElementById('classe-select').value;
         const materia = document.getElementById('materia-select').value;
@@ -149,23 +146,37 @@
         }
 
         const tableBody = document.getElementById('verifiche-body');
+        const verificaColonna = document.createElement('tr');
+
+        // Aggiungi il nome degli studenti
+        if (tableBody.rows.length === 0) {
+            const nameHeaderCell = document.createElement('th');
+            nameHeaderCell.textContent = "Nome";
+            verificaColonna.appendChild(nameHeaderCell);
+            studenti[classe].forEach(nome => {
+                const nameCell = document.createElement('td');
+                nameCell.textContent = nome;
+                verificaColonna.appendChild(nameCell);
+            });
+            tableBody.appendChild(verificaColonna);
+        }
+
+        const row = document.createElement('tr');
+
+        // Colonna per data e materia
+        const materiaCell = document.createElement('th');
+        materiaCell.innerHTML = `${data}<br>${materia}`;
+        row.appendChild(materiaCell);
 
         // Aggiungi le righe per ogni studente
-        studenti[classe].forEach(nome => {
-            const row = document.createElement('tr');
-
-            // Colonna nome
-            const nameCell = document.createElement('td');
-            nameCell.textContent = nome;
-            row.appendChild(nameCell);
-
-            // Colonna per data e materia
-            const materiaCell = document.createElement('td');
-            materiaCell.innerHTML = `${data}<br>${materia}<br><input type="number" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this)">`;
-            row.appendChild(materiaCell);
-
-            tableBody.appendChild(row);
+        [...tableBody.rows[0].cells].forEach((_, index) => {
+            if (index === 0) return; // Salta la colonna dei nomi
+            const votoCell = document.createElement('td');
+            votoCell.innerHTML = `<input type="number" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this)">`;
+            row.appendChild(votoCell);
         });
+
+        tableBody.appendChild(row);
 
         // Salva i dati nel localStorage
         salvaDati();
@@ -185,27 +196,29 @@
     // Funzione per salvare i dati nel localStorage
     function salvaDati() {
         const classe = document.getElementById('classe-select').value;
-        const materia = document.getElementById('materia-select').value;
-        const data = document.getElementById('data').value;
 
-        if (!classe || !materia || !data) return;
+        if (!classe) return;
 
         const verifiche = [];
-
         [...document.getElementById('verifiche-body').rows].forEach(row => {
-            const nome = row.cells[0].textContent;
-            const voto = row.cells[1].children[2].value; // Aggiunta per il voto
-            verifiche.push({ nome, voto });
+            const materia = row.cells[0].innerHTML.split('<br>')[1];
+            const data = row.cells[0].innerHTML.split('<br>')[0];
+            const voti = [];
+            for (let i = 1; i < row.cells.length; i++) {
+                const voto = row.cells[i].children[0]?.value || ""; // Aggiunta per il voto
+                voti.push({ nome: studenti[classe][i - 1], voto });
+            }
+            verifiche.push({ data, materia, voti });
         });
 
         localStorage.setItem('classe', classe);
-        localStorage.setItem('verifiche', JSON.stringify({ data, materia, voti: verifiche }));
+        localStorage.setItem('verifiche', JSON.stringify(verifiche));
     }
 
     // Funzione per caricare i dati dal localStorage
     function caricaDati() {
         const classe = localStorage.getItem('classe');
-        const verifica = JSON.parse(localStorage.getItem('verifiche'));
+        const verifiche = JSON.parse(localStorage.getItem('verifiche'));
 
         if (classe) {
             document.getElementById('classe-select').value = classe;
@@ -214,27 +227,26 @@
         const tableBody = document.getElementById('verifiche-body');
         tableBody.innerHTML = ''; // Resetta la tabella
 
-        if (verifica) {
-            const { data, materia, voti } = verifica;
-
-            // Aggiungi le righe per ogni studente
-            voti.forEach(voto => {
+        if (verifiche) {
+            // Aggiungi le righe per ogni verifica
+            verifiche.forEach(verifica => {
                 const row = document.createElement('tr');
-
-                // Colonna nome
-                const nameCell = document.createElement('td');
-                nameCell.textContent = voto.nome;
-                row.appendChild(nameCell);
-
-                // Colonna per data e materia
-                const materiaCell = document.createElement('td');
-                materiaCell.innerHTML = `${data}<br>${materia}<br><input type="number" min="0" max="100" placeholder="Voto" value="${voto.voto}" oninput="cambiaColore(this)">`;
+                const materiaCell = document.createElement('th');
+                materiaCell.innerHTML = `${verifica.data}<br>${verifica.materia}`;
                 row.appendChild(materiaCell);
-
+                verifica.voti.forEach(voto => {
+                    const votoCell = document.createElement('td');
+                    votoCell.innerHTML = `<input type="number" value="${voto.voto}" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this)">`;
+                    row.appendChild(votoCell);
+                });
                 tableBody.appendChild(row);
             });
         }
     }
+
+    window.onload = function() {
+        caricaDati();
+    };
 </script>
 
 </body>
