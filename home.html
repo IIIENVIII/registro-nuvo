@@ -41,26 +41,97 @@
 <body>
 
 <h2>Dashboard</h2>
+<p id="welcome-message"></p>
+
+<!-- Sezione per la selezione dell'utente (visibile solo per admin) -->
+<div id="admin-user-selection" style="display:none;">
+    <p>Seleziona un utente per visualizzare i dettagli:</p>
+    <ul>
+        <li><a href="#" onclick="showUserDetails('alessia.dematteis')">Alessia Dematteis</a></li>
+        <li><a href="#" onclick="showUserDetails('enrico.dematteis')">Enrico Dematteis</a></li>
+    </ul>
+</div>
+
+<!-- Tabella dei dati utente -->
 <table>
     <thead>
         <tr>
             <th>Attività</th>
             <th>Risultati</th>
             <th>Vita Scolastica</th>
-            <th>Vita Scolastica 1 prima superiore</th>
+            <th>Vita Scolastica 1a Superiore</th>
             <th>Dettagli</th>
         </tr>
     </thead>
-    <tbody>
-        <tr>
-            <td><a href="attivita1.html">Attività 1</a></td>
-            <td><a href="risultati1.html">Risultati 1</a></td>
-            <td><a href="vitascolastica1.html">Vita Scolastica 1</a></td>
-            <td><a href="dettagli1.html">Dettagli</a></td>
-            <td><a href="pizza.html">Registro 1 superiore</a></td>
-        </tr>
+    <tbody id="dashboard-content">
+        <!-- Contenuto dinamico -->
     </tbody>
 </table>
+
+<script>
+    // Simulazione dei dati utente
+    const userData = {
+        'alessia.dematteis': {
+            attivita: 'Attività di Alessia',
+            risultati: 'Risultati di Alessia',
+            vitaScolastica: 'Vita scolastica di Alessia',
+            vitaScolastica1: 'Vita scolastica 1a superiore di Alessia',
+            dettagli: 'Dettagli di Alessia'
+        },
+        'enrico.dematteis': {
+            attivita: 'Attività di Enrico',
+            risultati: 'Risultati di Enrico',
+            vitaScolastica: 'Vita scolastica di Enrico',
+            vitaScolastica1: 'Vita scolastica 1a superiore di Enrico',
+            dettagli: 'Dettagli di Enrico'
+        }
+    };
+
+    // Recupero dell'utente loggato
+    const loggedInUser = localStorage.getItem('loggedInUser');
+
+    // Elementi HTML per la dashboard
+    const dashboardContent = document.getElementById('dashboard-content');
+    const welcomeMessage = document.getElementById('welcome-message');
+    const adminUserSelection = document.getElementById('admin-user-selection');
+
+    // Funzione per creare una riga per la tabella della dashboard
+    function createRow(user, userType) {
+        return `
+            <tr>
+                <td><a href="#">${userData[user].attivita} (${userType})</a></td>
+                <td><a href="#">${userData[user].risultati} (${userType})</a></td>
+                <td><a href="#">${userData[user].vitaScolastica} (${userType})</a></td>
+                <td><a href="#">${userData[user].vitaScolastica1} (${userType})</a></td>
+                <td><a href="#">${userData[user].dettagli} (${userType})</a></td>
+            </tr>
+        `;
+    }
+
+    // Funzione per mostrare i dettagli di un utente specifico (solo per admin)
+    function showUserDetails(user) {
+        dashboardContent.innerHTML = ''; // Resetta la tabella
+        dashboardContent.innerHTML += createRow(user, user === 'alessia.dematteis' ? 'Alessia' : 'Enrico');
+    }
+
+    // Logica di visualizzazione basata sull'utente loggato
+    if (loggedInUser === 'admin') {
+        // Se l'admin è loggato, mostra la selezione degli utenti
+        welcomeMessage.textContent = 'Benvenuto Admin! Puoi visualizzare i dati di Alessia o Enrico.';
+        adminUserSelection.style.display = 'block';
+    } else if (loggedInUser === 'enrico.dematteis') {
+        // Se Enrico è loggato, mostra solo i suoi dati
+        welcomeMessage.textContent = 'Benvenuto Enrico! Puoi visualizzare le tue attività.';
+        dashboardContent.innerHTML += createRow('enrico.dematteis', 'Enrico');
+    } else if (loggedInUser === 'alessia.dematteis') {
+        // Se Alessia è loggata, mostra solo i suoi dati
+        welcomeMessage.textContent = 'Benvenuta Alessia! Puoi visualizzare le tue attività.';
+        dashboardContent.innerHTML += createRow('alessia.dematteis', 'Alessia');
+    } else {
+        // Se nessuno è loggato, reindirizza alla pagina di login
+        window.location.href = 'index.html';
+    }
+</script>
 
 </body>
 </html>
