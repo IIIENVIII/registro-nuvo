@@ -1,9 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,21 +15,25 @@
             height: 100vh;
             background-color: #f4f4f4;
         }
+
         .login-container {
             background-color: white;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+
         .login-container h2 {
             margin-bottom: 20px;
         }
+
         .login-container input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
         }
+
         .login-container button {
             width: 100%;
             padding: 10px;
@@ -36,9 +42,11 @@
             border: none;
             cursor: pointer;
         }
+
         .login-container button:hover {
             background-color: #0056b3;
         }
+
         #loading-message {
             display: none;
             margin-top: 20px;
@@ -46,6 +54,7 @@
         }
     </style>
 </head>
+
 <body>
 
 <div class="login-container">
@@ -76,6 +85,17 @@
             setTimeout(() => {
                 window.location.href = 'home.html';
             }, 5000); // 5000 millisecondi = 5 secondi
+
+        } else if (username === 'enrico.dematteis' && password === 'enrico2024') {
+            // Mostra il messaggio di attesa per Enrico
+            loadingMessage.textContent = 'Attendere, prego...';
+            loadingMessage.style.display = 'block';
+
+            // Attendi 5 secondi prima di reindirizzare a dashboard.html
+            setTimeout(() => {
+                window.location.href = 'dashboard.html';
+            }, 5000); // 5000 millisecondi = 5 secondi
+
         } else {
             // Mostra un messaggio di errore
             errorMessage.textContent = 'Nome utente o password errati.';
