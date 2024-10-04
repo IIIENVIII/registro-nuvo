@@ -104,6 +104,11 @@
     <!-- Bottone per creare la tabella delle verifiche -->
     <button class="add-button" onclick="creaTabella()">Crea Verifica</button>
 
+    <!-- Link alla pagina dei risultati -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="risultati1.html">Visualizza risultati</a>
+    </div>
+
     <!-- Tabella delle verifiche -->
     <table id="verifiche-table">
         <thead>
@@ -244,10 +249,7 @@
         [...document.getElementById('verifiche-body').rows].forEach(row => {
             const nome = row.cells[0].textContent;
             const media = row.cells[1].textContent;
-            const voto = row.cells[2].children[0].value || '';
-            const materia = row.cells[3].textContent;
-            const data = row.cells[4].textContent;
-
+            const voto = row.cells[2].children[0].value;
             verifiche.push({ nome, media, voto, materia, data });
         });
 
