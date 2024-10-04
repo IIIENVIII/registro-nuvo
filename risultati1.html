@@ -115,9 +115,7 @@
             <tr>
                 <th>Nome</th>
                 <th>Media</th>
-                <th>Verifica</th>
-                <th>Materia</th>
-                <th>Data</th>
+                <th>Data e Materia</th>
             </tr>
         </thead>
         <tbody id="verifiche-body">
@@ -168,40 +166,10 @@
             mediaCell.textContent = '-';
             row.appendChild(mediaCell);
 
-            // Colonna verifica
-            const verificaCell = document.createElement('td');
-            const inputVoto = document.createElement('input');
-            inputVoto.type = 'number';
-            inputVoto.min = 10;
-            inputVoto.max = 100;
-            inputVoto.placeholder = "Inserisci voto";
-
-            inputVoto.addEventListener('input', function() {
-                const voto = parseInt(this.value);
-
-                if (voto < 60) {
-                    this.classList.add('red');
-                    this.classList.remove('black');
-                } else {
-                    this.classList.add('black');
-                    this.classList.remove('red');
-                }
-
-                aggiornaMedia(nome, tableBody);
-            });
-
-            verificaCell.appendChild(inputVoto);
-            row.appendChild(verificaCell);
-
-            // Colonna materia
-            const materiaCell = document.createElement('td');
-            materiaCell.textContent = materia;
-            row.appendChild(materiaCell);
-
-            // Colonna data
-            const dataCell = document.createElement('td');
-            dataCell.textContent = data;
-            row.appendChild(dataCell);
+            // Colonna Data e Materia
+            const dataMateriaCell = document.createElement('td');
+            dataMateriaCell.innerHTML = data + "<br>" + materia;
+            row.appendChild(dataMateriaCell);
 
             tableBody.appendChild(row);
         });
@@ -249,31 +217,21 @@
         [...document.getElementById('verifiche-body').rows].forEach(row => {
             const nome = row.cells[0].textContent;
             const media = row.cells[1].textContent;
-            const voto = row.cells[2].children[0].value;
-            verifiche.push({ nome, media, voto, materia, data });
+            const dataMateria = row.cells[2].innerHTML.split("<br>");
+            verifiche.push({ nome, media, data: dataMateria[0], materia: dataMateria[1] });
         });
 
         localStorage.setItem('classe', classe);
-        localStorage.setItem('materia', materia);
-        localStorage.setItem('data', data);
         localStorage.setItem('verifiche', JSON.stringify(verifiche));
     }
 
     // Funzione per caricare i dati dal localStorage
     function caricaDati() {
         const classe = localStorage.getItem('classe');
-        const materia = localStorage.getItem('materia');
-        const data = localStorage.getItem('data');
         const verifiche = JSON.parse(localStorage.getItem('verifiche')) || [];
 
         if (classe) {
             document.getElementById('classe-select').value = classe;
-        }
-        if (materia) {
-            document.getElementById('materia-select').value = materia;
-        }
-        if (data) {
-            document.getElementById('data').value = data;
         }
 
         const tableBody = document.getElementById('verifiche-body');
@@ -292,41 +250,10 @@
             mediaCell.textContent = verifica.media;
             row.appendChild(mediaCell);
 
-            // Colonna verifica
-            const verificaCell = document.createElement('td');
-            const inputVoto = document.createElement('input');
-            inputVoto.type = 'number';
-            inputVoto.min = 10;
-            inputVoto.max = 100;
-            inputVoto.placeholder = "Inserisci voto";
-            inputVoto.value = verifica.voto;
-
-            inputVoto.addEventListener('input', function() {
-                const voto = parseInt(this.value);
-
-                if (voto < 60) {
-                    this.classList.add('red');
-                    this.classList.remove('black');
-                } else {
-                    this.classList.add('black');
-                    this.classList.remove('red');
-                }
-
-                aggiornaMedia(verifica.nome, tableBody);
-            });
-
-            verificaCell.appendChild(inputVoto);
-            row.appendChild(verificaCell);
-
-            // Colonna materia
-            const materiaCell = document.createElement('td');
-            materiaCell.textContent = verifica.materia;
-            row.appendChild(materiaCell);
-
-            // Colonna data
-            const dataCell = document.createElement('td');
-            dataCell.textContent = verifica.data;
-            row.appendChild(dataCell);
+            // Colonna Data e Materia
+            const dataMateriaCell = document.createElement('td');
+            dataMateriaCell.innerHTML = verifica.data + "<br>" + verifica.materia;
+            row.appendChild(dataMateriaCell);
 
             tableBody.appendChild(row);
         });
