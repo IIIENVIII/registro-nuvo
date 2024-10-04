@@ -99,11 +99,11 @@
     function createRow(user, userType) {
         return `
             <tr>
-                <td><a href="#">${userData[user].attivita} (${userType})</a></td>
-                <td><a href="#">${userData[user].risultati} (${userType})</a></td>
-                <td><a href="#">${userData[user].vitaScolastica} (${userType})</a></td>
-                <td><a href="#">${userData[user].vitaScolastica1} (${userType})</a></td>
-                <td><a href="#">${userData[user].dettagli} (${userType})</a></td>
+                <td><a href="attivita1.html">${userData[user].attivita} (${userType})</a></td>
+                <td><a href="risultati1.html">${userData[user].risultati} (${userType})</a></td>
+                <td><a href="vitascolastica1.html">${userData[user].vitaScolastica} (${userType})</a></td>
+                <td><a href="vitascolastica1.html">${userData[user].vitaScolastica1} (${userType})</a></td>
+                <td><a href="pizza.html">${userData[user].dettagli} (${userType})</a></td>
             </tr>
         `;
     }
@@ -119,6 +119,11 @@
         // Se l'admin è loggato, mostra la selezione degli utenti
         welcomeMessage.textContent = 'Benvenuto Admin! Puoi visualizzare i dati di Alessia o Enrico.';
         adminUserSelection.style.display = 'block';
+
+        // Mostra i dettagli di entrambi gli utenti
+        dashboardContent.innerHTML += createRow('alessia.dematteis', 'Alessia');
+        dashboardContent.innerHTML += createRow('enrico.dematteis', 'Enrico');
+
     } else if (loggedInUser === 'enrico.dematteis') {
         // Se Enrico è loggato, mostra solo i suoi dati
         welcomeMessage.textContent = 'Benvenuto Enrico! Puoi visualizzare le tue attività.';
