@@ -217,33 +217,33 @@
         const classe = localStorage.getItem('classe');
         const verifiche = JSON.parse(localStorage.getItem('verifiche_' + classe)); // Carica con chiave specifica per classe
 
+        // Se una classe è selezionata, aggiorna il selettore
+        const selettoreClasse = document.getElementById('classe-select');
         if (classe) {
-            document.getElementById('classe-select').value = classe;
+            selettoreClasse.value = classe;
         }
 
-        const tableBody = document.getElementById('verifiche-body');
-        tableBody.innerHTML = ''; // Resetta la tabella
-
+        // Se ci sono verifiche salvate, carica i dati nella tabella
         if (verifiche) {
-            // Aggiungi le righe alla tabella
-            verifiche.forEach(verifica => {
-                const { data, materia, nome, voto } = verifica;
+            const tableBody = document.getElementById('verifiche-body');
+            tableBody.innerHTML = ''; // Pulisci la tabella prima di caricare i dati
 
+            verifiche.forEach(verifica => {
                 const row = document.createElement('tr');
 
                 // Colonna per nome
                 const nameCell = document.createElement('td');
-                nameCell.textContent = nome;
+                nameCell.textContent = verifica.nome;
                 row.appendChild(nameCell);
 
                 // Colonna per data e materia
                 const materiaCell = document.createElement('td');
-                materiaCell.innerHTML = `${data}<br>${materia}`;
+                materiaCell.innerHTML = `${verifica.data}<br>${verifica.materia}`;
                 row.appendChild(materiaCell);
 
                 // Colonna per voto
                 const votoCell = document.createElement('td');
-                votoCell.innerHTML = `<input type="number" value="${voto}" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this)">`;
+                votoCell.innerHTML = `<input type="number" value="${verifica.voto}" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this)">`;
                 row.appendChild(votoCell);
 
                 tableBody.appendChild(row);
