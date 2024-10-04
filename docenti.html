@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -58,6 +58,13 @@
 </div>
 
 <script>
+    // Simula i dati degli utenti, includendo i voti
+    const users = {
+        'admin': {password: 'password', voti: 'Voti non visibili agli utenti normali.'},
+        'alessia.dematteis': {password: 'password', voti: 'Voti di Alessia: 8, 9, 7.'},
+        'enrico.dematteis': {password: 'password', voti: 'Voti di Enrico: 6, 7, 8.'}
+    };
+
     function login() {
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
@@ -67,15 +74,18 @@
         errorMessage.textContent = ''; // Resetta il messaggio di errore
         loadingMessage.textContent = ''; // Resetta il messaggio di caricamento
 
-        if (username === 'admin' && password === 'password') {
+        if (users[username] && users[username].password === password) {
             // Mostra il messaggio di attesa
             loadingMessage.textContent = 'Attendere, prego...';
             loadingMessage.style.display = 'block';
 
-            // Attendi 5 secondi prima di reindirizzare
+            // Salva i dati dell'utente attualmente loggato nel localStorage
+            localStorage.setItem('loggedInUser', username);
+
+            // Attendi 3 secondi prima di reindirizzare
             setTimeout(() => {
-                window.location.href = 'home.html';
-            }, 5000); // 5000 millisecondi = 5 secondi
+                window.location.href = 'dashboard.html';
+            }, 3000); // 3000 millisecondi = 3 secondi
         } else {
             // Mostra un messaggio di errore
             errorMessage.textContent = 'Nome utente o password errati.';
