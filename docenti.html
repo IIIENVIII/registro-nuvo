@@ -58,11 +58,11 @@
 </div>
 
 <script>
-    // Simula i dati degli utenti, includendo i voti
+    // Simula i dati degli utenti
     const users = {
-        'admin': {password: 'password', voti: 'Voti non visibili agli utenti normali.'},
-        'alessia.dematteis': {password: 'password', voti: 'Voti di Alessia: 8, 9, 7.'},
-        'enrico.dematteis': {password: 'password', voti: 'Voti di Enrico: 6, 7, 8.'}
+        'admin': {password: 'password'},
+        'alessia.dematteis': {password: 'password'},
+        'enrico.dematteis': {password: 'password'}
     };
 
     function login() {
@@ -74,17 +74,18 @@
         errorMessage.textContent = ''; // Resetta il messaggio di errore
         loadingMessage.textContent = ''; // Resetta il messaggio di caricamento
 
+        // Controlla se il nome utente esiste e se la password è corretta
         if (users[username] && users[username].password === password) {
             // Mostra il messaggio di attesa
             loadingMessage.textContent = 'Attendere, prego...';
             loadingMessage.style.display = 'block';
 
-            // Salva i dati dell'utente attualmente loggato nel localStorage
+            // Salva il nome utente loggato nel localStorage
             localStorage.setItem('loggedInUser', username);
 
-            // Attendi 3 secondi prima di reindirizzare
+            // Attendi 3 secondi prima di reindirizzare alla pagina home.html
             setTimeout(() => {
-                window.location.href = 'dashboard.html';
+                window.location.href = 'home.html';
             }, 3000); // 3000 millisecondi = 3 secondi
         } else {
             // Mostra un messaggio di errore
