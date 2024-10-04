@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestione Verifiche</title>
+    <title>Verifiche Classe</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -102,7 +102,7 @@
     </div>
 
     <!-- Bottone per creare la tabella delle verifiche -->
-    <button class="add-button" onclick="creaVerifica()">Crea Verifica</button>
+    <button class="add-button" onclick="creaTabella()">Crea Verifica</button>
 
     <!-- Link alla pagina dei risultati -->
     <div style="text-align: center; margin-top: 20px;">
@@ -138,8 +138,7 @@
         caricaDati();
     };
 
-    // Creazione di una nuova verifica
-    function creaVerifica() {
+    function creaTabella() {
         const classe = document.getElementById('classe-select').value;
         const materia = document.getElementById('materia-select').value;
         const data = document.getElementById('data').value;
@@ -149,111 +148,104 @@
             return;
         }
 
-        // Aggiunge la colonna con materia e data
-        const tableHead = document.querySelector('#verifiche-table thead tr');
-        const newHeader = document.createElement('th');
-        newHeader.innerHTML = data + "<br>" + materia;
-        tableHead.appendChild(newHeader);
-
-        // Aggiunge le celle per i voti
         const tableBody = document.getElementById('verifiche-body');
-        [...tableBody.rows].forEach(row => {
+
+        // Aggiungi la materia e la data come intestazione di colonna
+        const headerRow = tableBody.querySelector('tr');
+        const newHeaderCell = document.createElement('th');
+        newHeaderCell.colSpan = 2; // Col span per Data e Materia
+        newHeaderCell.innerHTML = `${data}<br>${materia}`;
+        headerRow.appendChild(newHeaderCell);
+
+        // Aggiungi le righe per ogni studente
+        studenti[classe].forEach(nome => {
+            const row = document.createElement('tr');
+
+            // Colonna nome
+            const nameCell = document.createElement('td');
+            nameCell.textContent = nome;
+            row.appendChild(nameCell);
+
+            // Colonna voto
             const votoCell = document.createElement('td');
-            const inputVoto = document.createElement('input');
-            inputVoto.type = 'number';
-            inputVoto.min = '0';
-            inputVoto.max = '100';
-            inputVoto.oninput = function() {
-                const voto = parseInt(this.value);
-                if (voto < 60) {
-                    this.style.color = 'red';
-                } else if (voto >= 60 && voto <= 100) {
-                    this.style.color = 'black';
-                }
-            };
-            votoCell.appendChild(inputVoto);
+            votoCell.innerHTML = '<input type="number" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this)">';
             row.appendChild(votoCell);
+
+            tableBody.appendChild(row);
         });
 
         // Salva i dati nel localStorage
         salvaDati();
     }
 
-    // Salva i dati nel localStorage
-    function salvaDati() {
-        const classe = document.getElementById('classe-select').value;
-
-        const table = document.getElementById('verifiche-table');
-        const dataTabella = {
-            classe: classe,
-            verifiche: []
-        };
-
-        // Prende i dati dalla tabella
-        const headers = table.querySelectorAll('thead th');
-        const rows = table.querySelectorAll('tbody tr');
-
-        headers.forEach((header, index) => {
-            if (index > 0) { // Ignora il primo header (Nome)
-                const colonna = {
-                    data: header.innerText.split("\n")[0],
-                    materia: header.innerText.split("\n")[1],
-                    voti: []
-                };
-                rows.forEach(row => {
-                    colonna.voti.push(row.cells[index].querySelector('input').value);
-                });
-                dataTabella.verifiche.push(colonna);
-            }
-        });
-
-        localStorage.setItem('verifiche', JSON.stringify(dataTabella));
+    function cambiaColore(input) {
+        const voto = parseInt(input.value);
+        if (voto >= 0 && voto <= 50) {
+            input.style.color = "red"; // Voti da 10 a 50
+        } else if (voto >= 60 && voto <= 100) {
+            input.style.color = "black"; // Voti da 60 a 100
+        } else {
+            input.style.color = ""; // Reset colore se non è valido
+        }
     }
 
-    // Carica i dati dal localStorage
+    // Funzione per salvare i dati nel localStorage
+    function salvaDati() {
+        const classe = document.getElementById('classe-select').value;
+        const materia = document.getElementById('materia-select').value;
+        const data = document.getElementById('data').value;
+
+        if (!classe || !materia || !data) return;
+
+        const verifiche = [];
+
+        [...document.getElementById('verifiche-body').rows].forEach(row => {
+            const nome = row.cells[0].textContent;
+            const voto = row.cells[1].children[0].value;
+            verifiche.push({ nome, voto });
+        });
+
+        localStorage.setItem('classe', classe);
+        localStorage.setItem('verifiche', JSON.stringify({ data, materia, voti: verifiche }));
+    }
+
+    // Funzione per caricare i dati dal localStorage
     function caricaDati() {
-        const datiSalvati = JSON.parse(localStorage.getItem('verifiche')) || {};
-        const classe = datiSalvati.classe || "";
+        const classe = localStorage.getItem('classe');
+        const verifica = JSON.parse(localStorage.getItem('verifiche'));
 
         if (classe) {
             document.getElementById('classe-select').value = classe;
+        }
 
-            const tableBody = document.getElementById('verifiche-body');
-            tableBody.innerHTML = ''; // Resetta la tabella
+        const tableBody = document.getElementById('verifiche-body');
+        tableBody.innerHTML = ''; // Resetta la tabella
 
-            // Carica i nomi degli studenti
-            studenti[classe].forEach(nome => {
+        if (verifica) {
+            const { data, materia, voti } = verifica;
+
+            // Aggiungi la materia e la data come intestazione di colonna
+            const headerRow = tableBody.querySelector('tr');
+            const newHeaderCell = document.createElement('th');
+            newHeaderCell.colSpan = 2; // Col span per Data e Materia
+            newHeaderCell.innerHTML = `${data}<br>${materia}`;
+            headerRow.appendChild(newHeaderCell);
+
+            // Aggiungi le righe per ogni studente
+            voti.forEach(voto => {
                 const row = document.createElement('tr');
+
+                // Colonna nome
                 const nameCell = document.createElement('td');
-                nameCell.textContent = nome;
+                nameCell.textContent = voto.nome;
                 row.appendChild(nameCell);
+
+                // Colonna voto
+                const votoCell = document.createElement('td');
+                votoCell.innerHTML = `<input type="number" min="0" max="100" placeholder="Voto" value="${voto.voto}" oninput="cambiaColore(this)">`;
+                row.appendChild(votoCell);
+
                 tableBody.appendChild(row);
-            });
-
-            const tableHead = document.querySelector('#verifiche-table thead tr');
-            datiSalvati.verifiche.forEach(verifica => {
-                const newHeader = document.createElement('th');
-                newHeader.innerHTML = verifica.data + "<br>" + verifica.materia;
-                tableHead.appendChild(newHeader);
-
-                [...tableBody.rows].forEach((row, index) => {
-                    const votoCell = document.createElement('td');
-                    const inputVoto = document.createElement('input');
-                    inputVoto.type = 'number';
-                    inputVoto.min = '0';
-                    inputVoto.max = '100';
-                    inputVoto.value = verifica.voti[index];
-                    inputVoto.oninput = function() {
-                        const voto = parseInt(this.value);
-                        if (voto < 60) {
-                            this.style.color = 'red';
-                        } else if (voto >= 60 && voto <= 100) {
-                            this.style.color = 'black';
-                        }
-                    };
-                    votoCell.appendChild(inputVoto);
-                    row.appendChild(votoCell);
-                });
             });
         }
     }
