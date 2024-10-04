@@ -3,12 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Risultati 1</title>
+    <title>Verifiche Classe</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
             background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
         }
         table {
             width: 100%;
@@ -16,176 +39,295 @@
             margin-top: 20px;
         }
         table, th, td {
-            border: 1px solid #ddd;
+            border: 1px solid black;
         }
         th, td {
-            padding: 12px;
-            text-align: left;
+            padding: 10px;
+            text-align: center;
         }
-        th {
-            background-color: #007bff;
-            color: white;
+        .red {
+            color: red;
         }
-        tr:hover {
-            background-color: #f1f1f1;
+        .black {
+            color: black;
         }
-        input[type="text"], input[type="date"] {
+        .add-button {
+            margin-top: 20px;
             width: 100%;
             padding: 10px;
-            margin: 10px 0;
-        }
-        input[type="button"] {
-            padding: 10px;
-            background-color: #007bff;
+            background-color: #28a745;
             color: white;
             border: none;
             cursor: pointer;
-        }
-        input[type="button"]:hover {
-            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
-<h1>Inserisci una Verifica</h1>
-<label for="materia">Materia:</label>
-<input type="text" id="materia" placeholder="Inserisci materia">
+<div class="container">
+    <h1>Gestione Verifiche</h1>
 
-<label for="data">Data:</label>
-<input type="date" id="data">
+    <!-- Selezione classe -->
+    <div class="form-group">
+        <label for="classe-select">Seleziona classe:</label>
+        <select id="classe-select">
+            <option value="" disabled selected>-- Seleziona classe --</option>
+            <option value="3media">3 media</option>
+            <option value="1superiore">1 superiore</option>
+        </select>
+    </div>
 
-<label for="descrizione">Descrizione:</label>
-<input type="text" id="descrizione" placeholder="Descrizione">
+    <!-- Selezione della materia -->
+    <div class="form-group">
+        <label for="materia-select">Seleziona materia:</label>
+        <select id="materia-select">
+            <option value="" disabled selected>-- Seleziona materia --</option>
+            <option value="Italiano">Italiano</option>
+            <option value="Matematica">Matematica</option>
+            <option value="Scienze">Scienze</option>
+            <option value="Geografia">Geografia</option>
+            <option value="Storia">Storia</option>
+            <option value="Ginnastica">Ginnastica</option>
+            <option value="Arte">Arte</option>
+            <option value="Disegno">Disegno</option>
+            <option value="Informatica">Informatica</option>
+            <option value="Musica">Musica</option>
+        </select>
+    </div>
 
-<input type="button" value="Crea Verifica" onclick="creaVerifica()">
-<input type="button" value="Salva Voti" onclick="salvaVoti()">
+    <!-- Inserimento data -->
+    <div class="form-group">
+        <label for="data">Data:</label>
+        <input type="date" id="data">
+    </div>
 
-<h2>Voti Inseriti</h2>
-<table id="tabellaRisultati">
-    <thead>
-        <tr>
-            <th>Nome Studente</th>
-            <th>Materia</th>
-            <th>Data</th>
-            <th>Descrizione</th>
-            <th>Voto</th>
-        </tr>
-    </thead>
-    <tbody id="tbodyRisultati">
-    </tbody>
-</table>
+    <!-- Bottone per creare la tabella delle verifiche -->
+    <button class="add-button" onclick="creaTabella()">Crea Verifica</button>
+
+    <!-- Tabella delle verifiche -->
+    <table id="verifiche-table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Media</th>
+                <th>Verifica</th>
+                <th>Materia</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody id="verifiche-body">
+        </tbody>
+    </table>
+</div>
 
 <script>
-    const studenti = [
-        "Stellina Dematteis",
-        "Tartaruga Dematteis",
-        "Yucky Benua",
-        "Lollo Benua",
-        "Leonard Benua",
-        "Sparcky Benua",
-        "Flaffy Dematteis",
-        "Tina Dematteis",
-        "Grigetta Benua",
-        "Luna Dematteis",
-        "Luna Benua",
-        "Kendy Dematteis",
-        "Papero Benua",
-        "Curt Dematteis",
-        "Briciola Dematteis",
-        "Lampo Benua"
-    ];
-
-    // Carica i risultati dal localStorage al caricamento della pagina
-    window.onload = function() {
-        const risultati = JSON.parse(localStorage.getItem('risultati')) || [];
-        risultati.forEach(risultato => aggiungiRisultatoTabella(risultato));
+    const studenti = {
+        "3media": [
+            "Stellina Dematteis", "Tartaruga Dematteis", "Yucky Benua", "Lollo Benua", "Leonard Benua", 
+            "Sparcky Benua", "Flaffy Dematteis", "Tina Dematteis", "Grigetta Benua", "Luna Dematteis",
+            "Luna Benua", "Kendy Dematteis", "Papero Benua", "Curt Dematteis", "Briciola Dematteis", "Lampo Benua"
+        ],
+        "1superiore": [
+            "Cane Dematteis", "Cane Benua", "Mician Dematteis", "Cicciobello Allabue", "Micheal Temperini", 
+            "Cattivo Temperini", "Bambola Rossetti", "Teschio Carottini", "Robottina Carottini"
+        ]
     };
 
-    function creaVerifica() {
-        const materia = document.getElementById('materia').value;
-        const data = document.getElementById('data').value;
-        const descrizione = document.getElementById('descrizione').value;
+    window.onload = function() {
+        caricaDati();
+    };
 
-        if (materia && data && descrizione) {
-            // Aggiungi la verifica a tutti gli studenti
-            studenti.forEach(studente => {
-                const risultato = { studente, materia, data, descrizione, voto: null };
-                aggiungiRisultatoTabella(risultato);
+    function creaTabella() {
+        const classe = document.getElementById('classe-select').value;
+        const materia = document.getElementById('materia-select').value;
+        const data = document.getElementById('data').value;
+
+        if (!classe || !materia || !data) {
+            alert("Per favore, riempi tutti i campi.");
+            return;
+        }
+
+        const tableBody = document.getElementById('verifiche-body');
+        tableBody.innerHTML = ''; // Resetta la tabella
+
+        studenti[classe].forEach(nome => {
+            const row = document.createElement('tr');
+
+            // Colonna nome
+            const nameCell = document.createElement('td');
+            nameCell.textContent = nome;
+            row.appendChild(nameCell);
+
+            // Colonna media (inizialmente vuota)
+            const mediaCell = document.createElement('td');
+            mediaCell.textContent = '-';
+            row.appendChild(mediaCell);
+
+            // Colonna verifica
+            const verificaCell = document.createElement('td');
+            const inputVoto = document.createElement('input');
+            inputVoto.type = 'number';
+            inputVoto.min = 10;
+            inputVoto.max = 100;
+            inputVoto.placeholder = "Inserisci voto";
+
+            inputVoto.addEventListener('input', function() {
+                const voto = parseInt(this.value);
+
+                if (voto < 60) {
+                    this.classList.add('red');
+                    this.classList.remove('black');
+                } else {
+                    this.classList.add('black');
+                    this.classList.remove('red');
+                }
+
+                aggiornaMedia(nome, tableBody);
             });
 
-            // Salva i risultati nel localStorage
-            salvaRisultati();
-        } else {
-            alert("Per favore, compila tutti i campi necessari.");
+            verificaCell.appendChild(inputVoto);
+            row.appendChild(verificaCell);
+
+            // Colonna materia
+            const materiaCell = document.createElement('td');
+            materiaCell.textContent = materia;
+            row.appendChild(materiaCell);
+
+            // Colonna data
+            const dataCell = document.createElement('td');
+            dataCell.textContent = data;
+            row.appendChild(dataCell);
+
+            tableBody.appendChild(row);
+        });
+
+        // Salva i dati nel localStorage
+        salvaDati();
+    }
+
+    function aggiornaMedia(nome, tableBody) {
+        const voti = [];
+
+        [...tableBody.rows].forEach(row => {
+            const nomeStudente = row.cells[0].textContent;
+            if (nomeStudente === nome) {
+                const voto = row.cells[2].children[0].value;
+                if (voto) {
+                    voti.push(parseInt(voto));
+                }
+            }
+        });
+
+        const media = voti.length ? (voti.reduce((a, b) => a + b, 0) / voti.length).toFixed(2) : '-';
+        
+        [...tableBody.rows].forEach(row => {
+            const nomeStudente = row.cells[0].textContent;
+            if (nomeStudente === nome) {
+                row.cells[1].textContent = media;
+            }
+        });
+
+        // Salva i dati aggiornati nel localStorage
+        salvaDati();
+    }
+
+    // Funzione per salvare i dati nel localStorage
+    function salvaDati() {
+        const classe = document.getElementById('classe-select').value;
+        const materia = document.getElementById('materia-select').value;
+        const data = document.getElementById('data').value;
+
+        if (!classe || !materia || !data) return;
+
+        const verifiche = [];
+
+        [...document.getElementById('verifiche-body').rows].forEach(row => {
+            const nome = row.cells[0].textContent;
+            const media = row.cells[1].textContent;
+            const voto = row.cells[2].children[0].value || '';
+            const materia = row.cells[3].textContent;
+            const data = row.cells[4].textContent;
+
+            verifiche.push({ nome, media, voto, materia, data });
+        });
+
+        localStorage.setItem('classe', classe);
+        localStorage.setItem('materia', materia);
+        localStorage.setItem('data', data);
+        localStorage.setItem('verifiche', JSON.stringify(verifiche));
+    }
+
+    // Funzione per caricare i dati dal localStorage
+    function caricaDati() {
+        const classe = localStorage.getItem('classe');
+        const materia = localStorage.getItem('materia');
+        const data = localStorage.getItem('data');
+        const verifiche = JSON.parse(localStorage.getItem('verifiche')) || [];
+
+        if (classe) {
+            document.getElementById('classe-select').value = classe;
         }
-    }
+        if (materia) {
+            document.getElementById('materia-select').value = materia;
+        }
+        if (data) {
+            document.getElementById('data').value = data;
+        }
 
-    function aggiungiRisultatoTabella(risultato) {
-        const tbody = document.getElementById('tbodyRisultati');
-        const tr = document.createElement('tr');
-        
-        // Crea una cella per ogni campo
-        const tdStudente = document.createElement('td');
-        tdStudente.textContent = risultato.studente;
-        tr.appendChild(tdStudente);
-        
-        const tdMateria = document.createElement('td');
-        tdMateria.textContent = risultato.materia;
-        tr.appendChild(tdMateria);
-        
-        const tdData = document.createElement('td');
-        tdData.textContent = risultato.data;
-        tr.appendChild(tdData);
-        
-        const tdDescrizione = document.createElement('td');
-        tdDescrizione.textContent = risultato.descrizione;
-        tr.appendChild(tdDescrizione);
-        
-        const tdVoto = document.createElement('td');
-        const inputVoto = document.createElement('input');
-        inputVoto.type = 'text'; // Cambiato in tipo text per accettare anche "ass" e "eson"
-        inputVoto.placeholder = 'Voto (10-100, ass, eson)';
-        inputVoto.id = `voto-${risultato.studente}`;
-        if (risultato.voto !== null) inputVoto.value = risultato.voto; // Imposta il valore se presente
-        tdVoto.appendChild(inputVoto);
-        tr.appendChild(tdVoto);
-        
-        tbody.appendChild(tr);
-    }
+        const tableBody = document.getElementById('verifiche-body');
+        tableBody.innerHTML = ''; // Resetta la tabella
 
-    function salvaVoti() {
-        const tbody = document.getElementById('tbodyRisultati');
-        const risultati = Array.from(tbody.children).map(tr => {
-            const td = Array.from(tr.children);
-            const votoInput = td[4].querySelector('input');
-            return {
-                studente: td[0].textContent,
-                materia: td[1].textContent,
-                data: td[2].textContent,
-                descrizione: td[3].textContent,
-                voto: votoInput ? votoInput.value : null // Salva il voto come stringa
-            };
+        verifiche.forEach(verifica => {
+            const row = document.createElement('tr');
+
+            // Colonna nome
+            const nameCell = document.createElement('td');
+            nameCell.textContent = verifica.nome;
+            row.appendChild(nameCell);
+
+            // Colonna media
+            const mediaCell = document.createElement('td');
+            mediaCell.textContent = verifica.media;
+            row.appendChild(mediaCell);
+
+            // Colonna verifica
+            const verificaCell = document.createElement('td');
+            const inputVoto = document.createElement('input');
+            inputVoto.type = 'number';
+            inputVoto.min = 10;
+            inputVoto.max = 100;
+            inputVoto.placeholder = "Inserisci voto";
+            inputVoto.value = verifica.voto;
+
+            inputVoto.addEventListener('input', function() {
+                const voto = parseInt(this.value);
+
+                if (voto < 60) {
+                    this.classList.add('red');
+                    this.classList.remove('black');
+                } else {
+                    this.classList.add('black');
+                    this.classList.remove('red');
+                }
+
+                aggiornaMedia(verifica.nome, tableBody);
+            });
+
+            verificaCell.appendChild(inputVoto);
+            row.appendChild(verificaCell);
+
+            // Colonna materia
+            const materiaCell = document.createElement('td');
+            materiaCell.textContent = verifica.materia;
+            row.appendChild(materiaCell);
+
+            // Colonna data
+            const dataCell = document.createElement('td');
+            dataCell.textContent = verifica.data;
+            row.appendChild(dataCell);
+
+            tableBody.appendChild(row);
         });
-
-        localStorage.setItem('risultati', JSON.stringify(risultati));
-        alert("Voti salvati con successo!");
-    }
-
-    function salvaRisultati() {
-        const tbody = document.getElementById('tbodyRisultati');
-        const risultati = Array.from(tbody.children).map(tr => {
-            const td = Array.from(tr.children);
-            return {
-                studente: td[0].textContent,
-                materia: td[1].textContent,
-                data: td[2].textContent,
-                descrizione: td[3].textContent,
-                voto: null // Inizialmente senza voto
-            };
-        });
-
-        localStorage.setItem('risultati', JSON.stringify(risultati));
     }
 </script>
 
