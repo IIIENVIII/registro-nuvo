@@ -51,7 +51,7 @@
         .black {
             color: black;
         }
-        .add-button, .save-button {
+        .add-button {
             margin-top: 20px;
             width: 100%;
             padding: 10px;
@@ -59,9 +59,6 @@
             color: white;
             border: none;
             cursor: pointer;
-        }
-        .save-button {
-            background-color: #007bff; /* colore diverso per il pulsante Salva tutto */
         }
     </style>
 </head>
@@ -105,21 +102,23 @@
     </div>
 
     <!-- Bottone per creare la tabella delle verifiche -->
-    <button class="add-button" onclick="creaVerifica()">Crea Verifica</button>
+    <button class="add-button" onclick="creaTabella()">Crea Verifica</button>
 
-    <!-- Bottone per salvare tutto -->
-    <button class="save-button" onclick="salvaTutto()">Salva tutto</button>
+    <!-- Link alla pagina dei risultati -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="risultati1.html">Visualizza risultati</a>
+    </div>
 
     <!-- Tabella delle verifiche -->
     <table id="verifiche-table">
         <thead>
             <tr>
                 <th>Nome</th>
-                <!-- Le colonne per data e materia saranno aggiunte dinamicamente -->
+                <th>Data e Materia</th>
+                <th>Voto</th>
             </tr>
         </thead>
         <tbody id="verifiche-body">
-            <!-- Le righe per gli studenti saranno aggiunte dinamicamente -->
         </tbody>
     </table>
 </div>
@@ -137,118 +136,109 @@
         ]
     };
 
-    let verifiche = []; // Memorizza tutte le verifiche con data, materia e voti
-    let classeSelezionata = null; // Memorizza la classe selezionata
-
     // Funzione per cambiare classe e resettare la tabella
     function cambiaClasse() {
-        classeSelezionata = document.getElementById('classe-select').value;
+        const classeSelezionata = document.getElementById('classe-select').value;
         document.getElementById('verifiche-body').innerHTML = ''; // Pulisce la tabella
-        document.getElementById('verifiche-table').querySelector('thead').innerHTML = `<tr><th>Nome</th></tr>`; // Pulisce le intestazioni
-        verifiche = []; // Reset delle verifiche per la nuova classe
-        caricaStudenti(classeSelezionata); // Carica i nomi degli studenti
-        caricaDati(classeSelezionata); // Carica eventuali dati salvati
-        localStorage.setItem('classe', classeSelezionata); // Salva la classe selezionata
+        caricaDati(classeSelezionata); // Carica i dati della nuova classe
     }
 
-    // Funzione per caricare i nomi degli studenti nella tabella
-    function caricaStudenti(classe) {
-        const tableBody = document.getElementById('verifiche-body');
-        studenti[classe].forEach(nome => {
-            const row = document.createElement('tr');
-            const nameCell = document.createElement('td');
-            nameCell.textContent = nome;
-            row.appendChild(nameCell);
-            tableBody.appendChild(row);
-        });
-    }
-
-    // Funzione per creare una nuova verifica e aggiungere una colonna alla tabella
-    function creaVerifica() {
+    // Funzione per creare la tabella delle verifiche
+    function creaTabella() {
+        const classe = document.getElementById('classe-select').value;
         const materia = document.getElementById('materia-select').value;
         const data = document.getElementById('data').value;
 
-        if (!classeSelezionata || !materia || !data) {
+        if (!classe || !materia || !data) {
             alert("Per favore, riempi tutti i campi.");
             return;
         }
 
-        // Aggiunge una nuova verifica alla lista delle verifiche
-        verifiche.push({ data, materia, voti: {} });
-
-        // Aggiunge una nuova colonna alla tabella con data e materia
-        const tableHead = document.getElementById('verifiche-table').querySelector('thead tr');
-        const newHeader = document.createElement('th');
-        newHeader.innerHTML = `${data}<br>${materia}`;
-        tableHead.appendChild(newHeader);
-
-        // Aggiunge le celle per i voti agli studenti
         const tableBody = document.getElementById('verifiche-body');
-        [...tableBody.rows].forEach((row, index) => {
+
+        // Aggiungi una nuova riga per ogni studente
+        studenti[classe].forEach(nome => {
+            const row = document.createElement('tr');
+
+            // Colonna per nome
+            const nameCell = document.createElement('td');
+            nameCell.textContent = nome;
+            row.appendChild(nameCell);
+
+            // Colonna per data e materia
+            const materiaCell = document.createElement('td');
+            materiaCell.innerHTML = `${data}<br>${materia}`;
+            row.appendChild(materiaCell);
+
+            // Colonna per voto
             const votoCell = document.createElement('td');
-            votoCell.innerHTML = `<input type="number" min="0" max="100" placeholder="Voto" oninput="salvaVoto(${index}, ${verifiche.length - 1}, this)">`;
+            votoCell.innerHTML = `<input type="number" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this); salvaDati();">`;
             row.appendChild(votoCell);
+
+            tableBody.appendChild(row);
         });
 
         // Salva i dati nel localStorage
         salvaDati();
     }
 
-    // Funzione per cambiare il colore del voto in base al valore inserito
     function cambiaColore(input) {
         const voto = parseInt(input.value);
-        if (voto >= 0 && voto < 60) {
-            input.classList.remove('black');
-            input.classList.add('red');
+        if (voto >= 0 && voto <= 50) {
+            input.style.color = "red"; // Voti da 10 a 50
         } else if (voto >= 60 && voto <= 100) {
-            input.classList.remove('red');
-            input.classList.add('black');
+            input.style.color = "black"; // Voti da 60 a 100
         } else {
-            input.classList.remove('red');
-            input.classList.remove('black');
+            input.style.color = ""; // Reset colore se non è valido
         }
-    }
-
-    // Funzione per salvare il voto e cambiarne il colore
-    function salvaVoto(studenteIndex, verificaIndex, input) {
-        const voto = input.value;
-        verifiche[verificaIndex].voti[studenteIndex] = voto; // Salva il voto nell'oggetto verifiche
-        cambiaColore(input); // Cambia il colore del voto
-        salvaDati(); // Salva i dati nel localStorage ogni volta che un voto viene modificato
     }
 
     // Funzione per salvare i dati nel localStorage
     function salvaDati() {
-        localStorage.setItem('verifiche_' + classeSelezionata, JSON.stringify(verifiche)); // Salva le verifiche per la classe specifica
-    }
+        const classe = document.getElementById('classe-select').value;
+        const verifiche = [];
 
-    // Funzione per salvare tutto
-    function salvaTutto() {
-        salvaDati();
-        alert('Tutti i dati sono stati salvati!');
+        if (!classe) return;
+
+        [...document.getElementById('verifiche-body').rows].forEach(row => {
+            const materia = row.cells[1].innerHTML.split('<br>')[1];
+            const data = row.cells[1].innerHTML.split('<br>')[0];
+            const voto = row.cells[2].children[0]?.value || ""; // Aggiunta per il voto
+            verifiche.push({ data, materia, nome: row.cells[0].innerText, voto });
+        });
+
+        localStorage.setItem('classe', classe);
+        localStorage.setItem('verifiche_' + classe, JSON.stringify(verifiche)); // Salva con chiave specifica per classe
     }
 
     // Funzione per caricare i dati dal localStorage
     function caricaDati(classe) {
-        const datiSalvati = JSON.parse(localStorage.getItem('verifiche_' + classe)); // Carica le verifiche per la classe specifica
-        if (datiSalvati) {
-            verifiche = datiSalvati; // Carica le verifiche salvate
-            const tableHead = document.getElementById('verifiche-table').querySelector('thead tr');
+        const verifiche = JSON.parse(localStorage.getItem('verifiche_' + classe)); // Carica con chiave specifica per classe
 
-            // Aggiunge le colonne per le verifiche già salvate
-            verifiche.forEach((verifica, verificaIndex) => {
-                const newHeader = document.createElement('th');
-                newHeader.innerHTML = `${verifica.data}<br>${verifica.materia}`;
-                tableHead.appendChild(newHeader);
+        // Se ci sono verifiche salvate, carica i dati nella tabella
+        if (verifiche) {
+            const tableBody = document.getElementById('verifiche-body');
+            tableBody.innerHTML = ''; // Pulisce la tabella prima di caricare
 
-                const tableBody = document.getElementById('verifiche-body');
-                [...tableBody.rows].forEach((row, studenteIndex) => {
-                    const votoCell = document.createElement('td');
-                    const voto = verifica.voti[studenteIndex] || '';
-                    votoCell.innerHTML = `<input type="number" min="0" max="100" value="${voto}" placeholder="Voto" oninput="salvaVoto(${studenteIndex}, ${verificaIndex}, this)">`;
-                    cambiaColore(votoCell.querySelector('input')); // Cambia il colore del voto
-                    row.appendChild(votoCell);
-                });
+            verifiche.forEach(verifica => {
+                const row = document.createElement('tr');
+
+                // Colonna per nome
+                const nameCell = document.createElement('td');
+                nameCell.textContent = verifica.nome;
+                row.appendChild(nameCell);
+
+                // Colonna per data e materia
+                const materiaCell = document.createElement('td');
+                materiaCell.innerHTML = `${verifica.data}<br>${verifica.materia}`;
+                row.appendChild(materiaCell);
+
+                // Colonna per voto
+                const votoCell = document.createElement('td');
+                votoCell.innerHTML = `<input type="number" value="${verifica.voto}" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this); salvaDati();">`;
+                row.appendChild(votoCell);
+
+                tableBody.appendChild(row);
             });
         }
     }
@@ -258,7 +248,7 @@
         const classe = localStorage.getItem('classe');
         if (classe) {
             document.getElementById('classe-select').value = classe;
-            cambiaClasse();
+            caricaDati(classe);
         }
     };
 </script>
