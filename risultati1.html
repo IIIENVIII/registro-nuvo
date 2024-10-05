@@ -126,7 +126,7 @@
 <script>
     const studenti = {
         "3media": [
-            "Stellina Dematteis", "Tartaruga Dematteis", "Yucky Benua", "Lollo Benua", "Leonard Benua", 
+            "Stellina Dematteis", "Tartaruga Benua", "Yucky Benua", "Lollo Benua", "Leonard Benua", 
             "Sparcky Benua", "Flaffy Dematteis", "Tina Dematteis", "Grigetta Benua", "Luna Dematteis",
             "Luna Benua", "Kendy Dematteis", "Papero Benua", "Curt Dematteis", "Briciola Dematteis", "Lampo Benua"
         ],
@@ -172,7 +172,7 @@
 
             // Colonna per voto
             const votoCell = document.createElement('td');
-            votoCell.innerHTML = `<input type="number" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this)">`;
+            votoCell.innerHTML = `<input type="number" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this); salvaDati();">`;
             row.appendChild(votoCell);
 
             tableBody.appendChild(row);
@@ -235,7 +235,7 @@
 
                 // Colonna per voto
                 const votoCell = document.createElement('td');
-                votoCell.innerHTML = `<input type="number" value="${verifica.voto}" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this)">`;
+                votoCell.innerHTML = `<input type="number" value="${verifica.voto}" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this); salvaDati();">`;
                 row.appendChild(votoCell);
 
                 tableBody.appendChild(row);
