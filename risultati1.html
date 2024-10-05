@@ -132,10 +132,11 @@
     };
 
     let verifiche = []; // Memorizza tutte le verifiche con data, materia e voti
+    let classeSelezionata = null; // Memorizza la classe selezionata
 
     // Funzione per cambiare classe e resettare la tabella
     function cambiaClasse() {
-        const classeSelezionata = document.getElementById('classe-select').value;
+        classeSelezionata = document.getElementById('classe-select').value;
         document.getElementById('verifiche-body').innerHTML = ''; // Pulisce la tabella
         document.getElementById('verifiche-table').querySelector('thead').innerHTML = `<tr><th>Nome</th></tr>`; // Pulisce le intestazioni
         verifiche = []; // Reset delle verifiche per la nuova classe
@@ -158,11 +159,10 @@
 
     // Funzione per creare una nuova verifica e aggiungere una colonna alla tabella
     function creaVerifica() {
-        const classe = document.getElementById('classe-select').value;
         const materia = document.getElementById('materia-select').value;
         const data = document.getElementById('data').value;
 
-        if (!classe || !materia || !data) {
+        if (!classeSelezionata || !materia || !data) {
             alert("Per favore, riempi tutti i campi.");
             return;
         }
@@ -213,8 +213,7 @@
 
     // Funzione per salvare i dati nel localStorage
     function salvaDati() {
-        const classe = document.getElementById('classe-select').value;
-        localStorage.setItem('verifiche_' + classe, JSON.stringify(verifiche)); // Salva le verifiche per la classe specifica
+        localStorage.setItem('verifiche_' + classeSelezionata, JSON.stringify(verifiche)); // Salva le verifiche per la classe specifica
     }
 
     // Funzione per caricare i dati dal localStorage
@@ -247,8 +246,7 @@
         const classe = localStorage.getItem('classe');
         if (classe) {
             document.getElementById('classe-select').value = classe;
-            caricaStudenti(classe);
-            caricaDati(classe);
+            cambiaClasse();
         }
     };
 </script>
