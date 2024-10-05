@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verifiche Classe</title>
+    <title>Gestione Verifiche</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -136,12 +136,11 @@
         ]
     };
 
-    // Funzione per cambiare classe
+    // Funzione per cambiare classe e resettare la tabella
     function cambiaClasse() {
-        // Ripristina la tabella
-        document.getElementById('verifiche-body').innerHTML = '';
-        // Carica dati relativi alla classe selezionata
-        caricaDati();
+        const classeSelezionata = document.getElementById('classe-select').value;
+        document.getElementById('verifiche-body').innerHTML = ''; // Pulisce la tabella
+        caricaDati(classeSelezionata); // Carica i dati della nuova classe
     }
 
     // Funzione per creare la tabella delle verifiche
@@ -213,20 +212,13 @@
     }
 
     // Funzione per caricare i dati dal localStorage
-    function caricaDati() {
-        const classe = localStorage.getItem('classe');
+    function caricaDati(classe) {
         const verifiche = JSON.parse(localStorage.getItem('verifiche_' + classe)); // Carica con chiave specifica per classe
-
-        // Se una classe è selezionata, aggiorna il selettore
-        const selettoreClasse = document.getElementById('classe-select');
-        if (classe) {
-            selettoreClasse.value = classe;
-        }
 
         // Se ci sono verifiche salvate, carica i dati nella tabella
         if (verifiche) {
             const tableBody = document.getElementById('verifiche-body');
-            tableBody.innerHTML = ''; // Pulisci la tabella prima di caricare i dati
+            tableBody.innerHTML = ''; // Pulisce la tabella prima di caricare
 
             verifiche.forEach(verifica => {
                 const row = document.createElement('tr');
@@ -251,8 +243,13 @@
         }
     }
 
+    // Carica la classe iniziale quando la pagina viene caricata
     window.onload = function() {
-        caricaDati();
+        const classe = localStorage.getItem('classe');
+        if (classe) {
+            document.getElementById('classe-select').value = classe;
+            caricaDati(classe);
+        }
     };
 </script>
 
