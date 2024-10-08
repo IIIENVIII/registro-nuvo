@@ -29,14 +29,14 @@
         tr:hover {
             background-color: #f1f1f1;
         }
-        input[type="button"] {
+        input[type="button"], input[type="submit"] {
             padding: 5px;
             background-color: #007bff;
             color: white;
             border: none;
             cursor: pointer;
         }
-        input[type="button"]:hover {
+        input[type="button"]:hover, input[type="submit"]:hover {
             background-color: #0056b3;
         }
         .notifica {
@@ -57,6 +57,9 @@
             <th>Assenze</th>
             <th>Ritardi</th>
             <th>Azioni</th>
+            <th>Inserisci Presenze</th>
+            <th>Inserisci Assenze</th>
+            <th>Inserisci Ritardi</th>
         </tr>
     </thead>
     <tbody id="tbodyPresenze">
@@ -81,10 +84,10 @@
         "Curt Dematteis",
         "Briciola Dematteis",
         "Lampo Benua",
-        "Attiglio Dematteis"  <!-- Nome aggiunto -->
+        "Attiglio Dematteis"
     ];
 
-    // Carica le presenze dal localStorage al caricamento della pagina
+    // Carica le presenze dal localStorage
     window.onload = function() {
         const presenze = JSON.parse(localStorage.getItem('presenze')) || {};
         studenti.forEach(nome => {
@@ -99,54 +102,89 @@
         const tbody = document.getElementById('tbodyPresenze');
         const tr = document.createElement('tr');
 
-        // Crea cella per il nome dello studente
+        // Nome studente
         const tdStudente = document.createElement('td');
         tdStudente.textContent = nome;
         tr.appendChild(tdStudente);
 
-        // Crea cella per presenze
+        // Presenze
         const tdPresente = document.createElement('td');
         tdPresente.textContent = conteggio.presente;
-        tdPresente.id = `presente-${nome}`; // ID per aggiornamento diretto
+        tdPresente.id = `presente-${nome}`;
         tr.appendChild(tdPresente);
 
-        // Crea cella per assenze
+        // Assenze
         const tdAssente = document.createElement('td');
         tdAssente.textContent = conteggio.assente;
-        tdAssente.id = `assente-${nome}`; // ID per aggiornamento diretto
+        tdAssente.id = `assente-${nome}`;
         tr.appendChild(tdAssente);
 
-        // Crea cella per ritardi
+        // Ritardi
         const tdRitardo = document.createElement('td');
         tdRitardo.textContent = conteggio.ritardo;
-        tdRitardo.id = `ritardo-${nome}`; // ID per aggiornamento diretto
+        tdRitardo.id = `ritardo-${nome}`;
         tr.appendChild(tdRitardo);
 
-        // Crea cella per azioni
+        // Azioni
         const tdAzioni = document.createElement('td');
-
-        // Pulsante Presente
         const btnPresente = document.createElement('input');
         btnPresente.type = 'button';
         btnPresente.value = 'Presente';
         btnPresente.onclick = () => aggiornaConteggio(nome, 'presente');
         tdAzioni.appendChild(btnPresente);
 
-        // Pulsante Assente
         const btnAssente = document.createElement('input');
         btnAssente.type = 'button';
         btnAssente.value = 'Assente';
         btnAssente.onclick = () => aggiornaConteggio(nome, 'assente');
         tdAzioni.appendChild(btnAssente);
 
-        // Pulsante In Ritardo
         const btnRitardo = document.createElement('input');
         btnRitardo.type = 'button';
         btnRitardo.value = 'In Ritardo';
         btnRitardo.onclick = () => aggiornaConteggio(nome, 'ritardo');
         tdAzioni.appendChild(btnRitardo);
-
         tr.appendChild(tdAzioni);
+
+        // Inserisci presenze
+        const tdInserisciPresenze = document.createElement('td');
+        const inputPresenze = document.createElement('input');
+        inputPresenze.type = 'number';
+        inputPresenze.id = `inserisci-presente-${nome}`;
+        tdInserisciPresenze.appendChild(inputPresenze);
+        const btnInserisciPresenze = document.createElement('input');
+        btnInserisciPresenze.type = 'submit';
+        btnInserisciPresenze.value = 'Inserisci';
+        btnInserisciPresenze.onclick = () => inserisciConteggio(nome, 'presente', inputPresenze.value);
+        tdInserisciPresenze.appendChild(btnInserisciPresenze);
+        tr.appendChild(tdInserisciPresenze);
+
+        // Inserisci assenze
+        const tdInserisciAssenze = document.createElement('td');
+        const inputAssenze = document.createElement('input');
+        inputAssenze.type = 'number';
+        inputAssenze.id = `inserisci-assente-${nome}`;
+        tdInserisciAssenze.appendChild(inputAssenze);
+        const btnInserisciAssenze = document.createElement('input');
+        btnInserisciAssenze.type = 'submit';
+        btnInserisciAssenze.value = 'Inserisci';
+        btnInserisciAssenze.onclick = () => inserisciConteggio(nome, 'assente', inputAssenze.value);
+        tdInserisciAssenze.appendChild(btnInserisciAssenze);
+        tr.appendChild(tdInserisciAssenze);
+
+        // Inserisci ritardi
+        const tdInserisciRitardi = document.createElement('td');
+        const inputRitardi = document.createElement('input');
+        inputRitardi.type = 'number';
+        inputRitardi.id = `inserisci-ritardo-${nome}`;
+        tdInserisciRitardi.appendChild(inputRitardi);
+        const btnInserisciRitardi = document.createElement('input');
+        btnInserisciRitardi.type = 'submit';
+        btnInserisciRitardi.value = 'Inserisci';
+        btnInserisciRitardi.onclick = () => inserisciConteggio(nome, 'ritardo', inputRitardi.value);
+        tdInserisciRitardi.appendChild(btnInserisciRitardi);
+        tr.appendChild(tdInserisciRitardi);
+
         tbody.appendChild(tr);
     }
 
@@ -157,12 +195,24 @@
             presenze[nome] = { presente: 0, assente: 0, ritardo: 0 };
         }
 
-        presenze[nome][tipo] += 1; // Incrementa il conteggio per il tipo selezionato
+        presenze[nome][tipo] += 1;
 
-        // Aggiorna il localStorage
         localStorage.setItem('presenze', JSON.stringify(presenze));
 
-        // Aggiorna solo il campo specifico
+        document.getElementById(`${tipo}-${nome}`).textContent = presenze[nome][tipo];
+    }
+
+    function inserisciConteggio(nome, tipo, valore) {
+        const presenze = JSON.parse(localStorage.getItem('presenze')) || {};
+
+        if (!presenze[nome]) {
+            presenze[nome] = { presente: 0, assente: 0, ritardo: 0 };
+        }
+
+        presenze[nome][tipo] += parseInt(valore);
+
+        localStorage.setItem('presenze', JSON.stringify(presenze));
+
         document.getElementById(`${tipo}-${nome}`).textContent = presenze[nome][tipo];
     }
 
