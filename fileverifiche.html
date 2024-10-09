@@ -54,7 +54,7 @@
 <h2>Carica i tuoi file</h2>
 
 <div class="file-input">
-    <input type="file" id="fileInput" accept=".doc,.docx,.xls,.xlsx,.ppt,.pptx,.pdf" />
+    <input type="file" id="fileInput" accept=".doc,.docx,.xls,.xlsx,.ppt,.pptx,.pdf" multiple />
     <button onclick="addFile()">Aggiungi File</button>
 </div>
 
@@ -67,14 +67,18 @@
         const input = document.getElementById('fileInput');
         const files = Array.from(input.files);
 
+        if (files.length === 0) {
+            alert('Nessun file selezionato!');
+            return; // Se non ci sono file, esci dalla funzione
+        }
+
         files.forEach(file => {
             // Aggiungi il file all'array
             fileList.push(file);
-            displayFiles();
         });
 
-        // Reset dell'input
-        input.value = '';
+        displayFiles(); // Aggiorna la visualizzazione dei file
+        input.value = ''; // Reset dell'input
     }
 
     function displayFiles() {
@@ -89,7 +93,19 @@
             const link = document.createElement('a');
             link.href = URL.createObjectURL(file);
             link.target = '_blank'; // Apri in una nuova scheda
-            link.textContent = 'Apri';
+
+            // Imposta il testo del link in base al tipo di file
+            if (file.type === 'application/pdf') {
+                link.textContent = 'Apri PDF';
+            } else if (['application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 
+                         'application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+                         'application/vnd.ms-powerpoint', 'application/vnd.openxmlformats-officedocument.presentationml.presentation'].includes(file.type)) {
+                // Qui supponiamo che tu abbia una funzione per convertire e restituire un PDF
+                link.href = convertToPdf(file); // Funzione fittizia per la conversione
+                link.textContent = 'Apri come PDF';
+            } else {
+                link.textContent = 'Apri';
+            }
             li.appendChild(link);
 
             // Aggiungi il pulsante di rimozione
@@ -107,6 +123,14 @@
         // Rimuovi il file dall'array
         fileList.splice(index, 1);
         displayFiles(); // Aggiorna la visualizzazione
+    }
+
+    // Funzione fittizia per la conversione in PDF
+    function convertToPdf(file) {
+        // Qui dovresti implementare la logica per convertire il file in PDF
+        // e restituire l'URL del file PDF
+        // Per ora, ritorniamo un URL fittizio
+        return 'path/to/converted/file.pdf'; // Sostituisci con il percorso corretto del PDF convertito
     }
 </script>
 
