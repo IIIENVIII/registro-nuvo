@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Verifiche</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .file-input {
+            margin-bottom: 20px;
+        }
+
+        .file-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .file-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .remove-btn {
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Carica i tuoi file</h2>
+
+<div class="file-input">
+    <input type="file" id="fileInput" accept=".doc,.docx,.xls,.xlsx,.ppt,.pptx,.pdf" />
+    <button onclick="addFile()">Aggiungi File</button>
+</div>
+
+<ul id="fileList" class="file-list"></ul>
+
+<script>
+    const fileList = [];
+
+    function addFile() {
+        const input = document.getElementById('fileInput');
+        const files = Array.from(input.files);
+
+        files.forEach(file => {
+            // Aggiungi il file all'array
+            fileList.push(file);
+            displayFiles();
+        });
+
+        // Reset dell'input
+        input.value = '';
+    }
+
+    function displayFiles() {
+        const list = document.getElementById('fileList');
+        list.innerHTML = ''; // Pulisci la lista esistente
+
+        fileList.forEach((file, index) => {
+            const li = document.createElement('li');
+            li.textContent = file.name;
+
+            // Crea un link per aprire il file
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(file);
+            link.target = '_blank'; // Apri in una nuova scheda
+            link.textContent = 'Apri';
+            li.appendChild(link);
+
+            // Aggiungi il pulsante di rimozione
+            const removeBtn = document.createElement('span');
+            removeBtn.textContent = '❌';
+            removeBtn.className = 'remove-btn';
+            removeBtn.onclick = () => removeFile(index);
+            li.appendChild(removeBtn);
+
+            list.appendChild(li);
+        });
+    }
+
+    function removeFile(index) {
+        // Rimuovi il file dall'array
+        fileList.splice(index, 1);
+        displayFiles(); // Aggiorna la visualizzazione
+    }
+</script>
+
+</body>
+</html>
