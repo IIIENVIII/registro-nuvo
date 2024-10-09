@@ -61,26 +61,10 @@
 <ul id="fileList" class="file-list"></ul>
 
 <script>
-    const fileList = [];
+    // Carica i file salvati nel Local Storage all'apertura della pagina
+    const fileList = JSON.parse(localStorage.getItem('files')) || [];
 
-    function addFile() {
-        const input = document.getElementById('fileInput');
-        const files = Array.from(input.files);
-
-        if (files.length === 0) {
-            alert('Nessun file selezionato!');
-            return; // Se non ci sono file, esci dalla funzione
-        }
-
-        files.forEach(file => {
-            // Aggiungi il file all'array
-            fileList.push(file);
-        });
-
-        displayFiles(); // Aggiorna la visualizzazione dei file
-        input.value = ''; // Reset dell'input
-    }
-
+    // Funzione per mostrare i file nella lista
     function displayFiles() {
         const list = document.getElementById('fileList');
         list.innerHTML = ''; // Pulisci la lista esistente
@@ -100,7 +84,6 @@
             } else if (['application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 
                          'application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                          'application/vnd.ms-powerpoint', 'application/vnd.openxmlformats-officedocument.presentationml.presentation'].includes(file.type)) {
-                // Qui supponiamo che tu abbia una funzione per convertire e restituire un PDF
                 link.href = convertToPdf(file); // Funzione fittizia per la conversione
                 link.textContent = 'Apri come PDF';
             } else {
@@ -119,9 +102,35 @@
         });
     }
 
+    // Funzione per aggiungere file
+    function addFile() {
+        const input = document.getElementById('fileInput');
+        const files = Array.from(input.files);
+
+        if (files.length === 0) {
+            alert('Nessun file selezionato!');
+            return; // Se non ci sono file, esci dalla funzione
+        }
+
+        files.forEach(file => {
+            // Aggiungi il file all'array
+            fileList.push(file);
+        });
+
+        // Salva i file nel Local Storage
+        localStorage.setItem('files', JSON.stringify(fileList));
+
+        displayFiles(); // Aggiorna la visualizzazione dei file
+        input.value = ''; // Reset dell'input
+    }
+
     function removeFile(index) {
         // Rimuovi il file dall'array
         fileList.splice(index, 1);
+
+        // Aggiorna il Local Storage
+        localStorage.setItem('files', JSON.stringify(fileList));
+
         displayFiles(); // Aggiorna la visualizzazione
     }
 
@@ -132,6 +141,10 @@
         // Per ora, ritorniamo un URL fittizio
         return 'path/to/converted/file.pdf'; // Sostituisci con il percorso corretto del PDF convertito
     }
+
+    // Mostra i file salvati nel Local Storage all'apertura della pagina
+    displayFiles();
+
 </script>
 
 </body>
