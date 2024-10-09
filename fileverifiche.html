@@ -62,7 +62,7 @@
 
 <script>
     // Carica i file salvati nel Local Storage all'apertura della pagina
-    const fileList = JSON.parse(localStorage.getItem('files')) || [];
+    let fileList = JSON.parse(localStorage.getItem('files')) || [];
 
     // Funzione per mostrare i file nella lista
     function displayFiles() {
@@ -75,19 +75,14 @@
 
             // Crea un link per aprire il file
             const link = document.createElement('a');
-            link.href = URL.createObjectURL(file);
+            link.href = file.url; // Usa l'URL temporaneo
             link.target = '_blank'; // Apri in una nuova scheda
 
             // Imposta il testo del link in base al tipo di file
             if (file.type === 'application/pdf') {
                 link.textContent = 'Apri PDF';
-            } else if (['application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 
-                         'application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-                         'application/vnd.ms-powerpoint', 'application/vnd.openxmlformats-officedocument.presentationml.presentation'].includes(file.type)) {
-                link.href = convertToPdf(file); // Funzione fittizia per la conversione
-                link.textContent = 'Apri come PDF';
             } else {
-                link.textContent = 'Apri';
+                link.textContent = 'Apri come PDF'; // Assume la conversione a PDF
             }
             li.appendChild(link);
 
@@ -113,8 +108,9 @@
         }
 
         files.forEach(file => {
-            // Aggiungi il file all'array
-            fileList.push(file);
+            // Crea un URL temporaneo per il file
+            const url = URL.createObjectURL(file);
+            fileList.push({ name: file.name, url: url, type: file.type });
         });
 
         // Salva i file nel Local Storage
@@ -132,14 +128,6 @@
         localStorage.setItem('files', JSON.stringify(fileList));
 
         displayFiles(); // Aggiorna la visualizzazione
-    }
-
-    // Funzione fittizia per la conversione in PDF
-    function convertToPdf(file) {
-        // Qui dovresti implementare la logica per convertire il file in PDF
-        // e restituire l'URL del file PDF
-        // Per ora, ritorniamo un URL fittizio
-        return 'path/to/converted/file.pdf'; // Sostituisci con il percorso corretto del PDF convertito
     }
 
     // Mostra i file salvati nel Local Storage all'apertura della pagina
