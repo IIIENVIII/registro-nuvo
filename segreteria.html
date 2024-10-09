@@ -86,14 +86,14 @@
                 window.location.href = 'home.html';
             }, 5000); // 5000 millisecondi = 5 secondi
 
-        } else if (username === 'enrico.dematteis' && password === 'enrico2024') {
+        } else if (username === 'enrico.dematteis' && password === 'password') {  // Modificato qui
             // Mostra il messaggio di attesa per Enrico
             loadingMessage.textContent = 'Attendere, prego...';
             loadingMessage.style.display = 'block';
 
-            // Attendi 5 secondi prima di reindirizzare a dashboard.html
+            // Attendi 5 secondi prima di reindirizzare a fileverifiche.html
             setTimeout(() => {
-                window.location.href = 'dashboard.html';
+                window.location.href = 'fileverifiche.html';  // Modificato qui
             }, 5000); // 5000 millisecondi = 5 secondi
 
         } else {
