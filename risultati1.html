@@ -184,8 +184,8 @@
 
     function cambiaColore(input) {
         const voto = parseInt(input.value);
-        if (voto >= 0 && voto <= 50) {
-            input.style.color = "red"; // Voti da 10 a 50
+        if (voto >= 10 && voto <= 59) {
+            input.style.color = "red"; // Voti da 10 a 59
         } else if (voto >= 60 && voto <= 100) {
             input.style.color = "black"; // Voti da 60 a 100
         } else {
@@ -235,7 +235,8 @@
 
                 // Colonna per voto
                 const votoCell = document.createElement('td');
-                votoCell.innerHTML = `<input type="number" value="${verifica.voto}" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this); salvaDati();">`;
+                const color = verifica.voto >= 10 && verifica.voto <= 59 ? 'red' : 'black';
+                votoCell.innerHTML = `<input type="number" value="${verifica.voto}" min="0" max="100" placeholder="Voto" style="color: ${color};" oninput="cambiaColore(this); salvaDati();">`;
                 row.appendChild(votoCell);
 
                 tableBody.appendChild(row);
