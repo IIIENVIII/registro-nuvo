@@ -172,7 +172,23 @@
 
             // Colonna per voto
             const votoCell = document.createElement('td');
-            votoCell.innerHTML = `<input type="number" min="0" max="100" placeholder="Voto" oninput="cambiaColore(this); salvaDati();">`;
+            votoCell.innerHTML = `
+                <select onchange="cambiaColore(this); salvaDati();">
+                    <option value="">-- Voto --</option>
+                    <option value="ass">Assente</option>
+                    <option value="eson">Esonerato</option>
+                    <option value="0">0</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                    <option value="70">70</option>
+                    <option value="80">80</option>
+                    <option value="90">90</option>
+                    <option value="100">100</option>
+                </select>`;
             row.appendChild(votoCell);
 
             tableBody.appendChild(row);
@@ -182,14 +198,16 @@
         salvaDati();
     }
 
-    function cambiaColore(input) {
-        const voto = parseInt(input.value);
-        if (voto >= 10 && voto <= 59) {
-            input.style.color = "red"; // Voti da 10 a 59
+    function cambiaColore(select) {
+        const voto = select.value;
+        if (voto === "ass" || voto === "eson") {
+            select.style.color = "blue";
+        } else if (voto >= 10 && voto <= 59) {
+            select.style.color = "red"; // Voti da 10 a 59
         } else if (voto >= 60 && voto <= 100) {
-            input.style.color = "black"; // Voti da 60 a 100
+            select.style.color = "black"; // Voti da 60 a 100
         } else {
-            input.style.color = ""; // Reset colore se non è valido
+            select.style.color = ""; // Reset colore se non è valido
         }
     }
 
@@ -235,8 +253,16 @@
 
                 // Colonna per voto
                 const votoCell = document.createElement('td');
-                const color = verifica.voto >= 10 && verifica.voto <= 59 ? 'red' : 'black';
-                votoCell.innerHTML = `<input type="number" value="${verifica.voto}" min="0" max="100" placeholder="Voto" style="color: ${color};" oninput="cambiaColore(this); salvaDati();">`;
+                votoCell.innerHTML = `
+                    <select onchange="cambiaColore(this); salvaDati();">
+                        <option value="">-- Voto --</option>
+                        <option value="ass" ${verifica.voto === "ass" ? "selected" : ""}>Assente</option>
+                        <option value="eson" ${verifica.voto === "eson" ? "selected" : ""}>Esonerato</option>
+                        ${[...Array(11).keys()].map(i => {
+                            const value = i * 10;
+                            return `<option value="${value}" ${verifica.voto == value ? "selected" : ""}>${value}</option>`;
+                        }).join('')}
+                    </select>`;
                 row.appendChild(votoCell);
 
                 tableBody.appendChild(row);
