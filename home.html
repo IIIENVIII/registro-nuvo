@@ -59,8 +59,8 @@
             <th>Attività</th>
             <th>Risultati</th>
             <th>Vita Scolastica</th>
-            <th>file raggiungimento delle ore d'assenza</th>
-            <th>Dettagli</th>
+            <th>File raggiungimento delle ore d'assenza</th>
+            <th>Pagella</th>
         </tr>
     </thead>
     <tbody id="dashboard-content">
@@ -75,13 +75,13 @@
             attivita: 'Attività di Alessia',
             risultati: 'Risultati di Alessia',
             vitaScolastica: 'Vita scolastica di Alessia',
-            dettagli: 'Dettagli di Alessia'
+            dettagli: 'Pagella di Alessia'
         },
         'enrico.dematteis': {
             attivita: 'Attività di Enrico',
             risultati: 'Risultati di Enrico',
             vitaScolastica: 'Vita scolastica di Enrico',
-            dettagli: 'Dettagli di Enrico'
+            dettagli: 'Pagella di Enrico'
         }
     };
 
@@ -100,7 +100,8 @@
                 <td><a href="attivita1.html">${userData[user].attivita} (${userType})</a></td>
                 <td><a href="risultati1.html">${userData[user].risultati} (${userType})</a></td>
                 <td><a href="vitascolastica1.html">${userData[user].vitaScolastica1} (${userType})</a></td>
-                <td><a href="file.html">file</a></td> <!-- Modifica applicata qui -->
+                <td><a href="file.html">file</a></td>
+                <td><a href="pagella.html">Pagella</a></td> <!-- Modifica applicata qui -->
             </tr>
         `;
     }
