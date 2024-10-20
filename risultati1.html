@@ -77,15 +77,6 @@
         </select>
     </div>
 
-    <!-- Selezione quadrimestre -->
-    <div class="form-group">
-        <label for="quadrimestre-select">Seleziona quadrimestre:</label>
-        <select id="quadrimestre-select" onchange="cambiaQuadrimestre()">
-            <option value="1">1° Quadrimestre</option>
-            <option value="2">2° Quadrimestre</option>
-        </select>
-    </div>
-
     <!-- Selezione della materia -->
     <div class="form-group">
         <label for="materia-select">Seleziona materia:</label>
@@ -113,6 +104,11 @@
     <!-- Bottone per creare la tabella delle verifiche -->
     <button class="add-button" onclick="creaTabella()">Crea Verifica</button>
 
+    <!-- Link alla pagina dei risultati -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="risultati1.html">Visualizza risultati</a>
+    </div>
+
     <!-- Tabella delle verifiche -->
     <table id="verifiche-table">
         <thead>
@@ -132,8 +128,7 @@
         "3media": [
             "Stellina Dematteis", "Tartaruga Dematteis", "Yucky Benua", "Lollo Benua", "Leonard Benua", 
             "Sparcky Benua", "Flaffy Dematteis", "Tina Dematteis", "Grigetta Benua", "Luna Dematteis",
-            "Luna Benua", "Kendy Dematteis", "Papero Benua", "Curt Dematteis", "Briciola Dematteis", 
-            "Lampo Benua", "Sunny Benua", "Attiglio Dematteis",
+            "Luna Benua", "Kendy Dematteis", "Papero Benua", "Curt Dematteis", "Briciola Dematteis", "Lampo Benua", "Sunny Benua", "Attiglio Dematteis",
         ],
         "1superiore": [
             "Cane Dematteis", "Cane Benua", "Mician Dematteis", "Cicciobello Allabue", "Micheal Temperini", 
@@ -148,21 +143,13 @@
         caricaDati(classeSelezionata); // Carica i dati della nuova classe
     }
 
-    // Funzione per cambiare quadrimestre e resettare la tabella
-    function cambiaQuadrimestre() {
-        const classeSelezionata = document.getElementById('classe-select').value;
-        document.getElementById('verifiche-body').innerHTML = ''; // Pulisce la tabella
-        caricaDati(classeSelezionata); // Carica i dati del quadrimestre selezionato
-    }
-
     // Funzione per creare la tabella delle verifiche
     function creaTabella() {
         const classe = document.getElementById('classe-select').value;
         const materia = document.getElementById('materia-select').value;
         const data = document.getElementById('data').value;
-        const quadrimestre = document.getElementById('quadrimestre-select').value;
 
-        if (!classe || !materia || !data || !quadrimestre) {
+        if (!classe || !materia || !data) {
             alert("Per favore, riempi tutti i campi.");
             return;
         }
@@ -180,13 +167,13 @@
 
             // Colonna per data e materia
             const materiaCell = document.createElement('td');
-            materiaCell.innerHTML = `${data}<br>${materia}`;
+            materiaCell.innerHTML = ${data}<br>${materia};
             row.appendChild(materiaCell);
 
             // Colonna per voto (input text)
             const votoCell = document.createElement('td');
             votoCell.innerHTML = 
-                `<input type="text" oninput="cambiaColore(this); salvaDati();" placeholder="Inserisci voto, ass o eson">`;
+                <input type="text" oninput="cambiaColore(this); salvaDati();" placeholder="Inserisci voto, ass o eson">;
             row.appendChild(votoCell);
 
             tableBody.appendChild(row);
@@ -212,10 +199,9 @@
     // Funzione per salvare i dati nel localStorage
     function salvaDati() {
         const classe = document.getElementById('classe-select').value;
-        const quadrimestre = document.getElementById('quadrimestre-select').value;
         const verifiche = [];
 
-        if (!classe || !quadrimestre) return;
+        if (!classe) return;
 
         [...document.getElementById('verifiche-body').rows].forEach(row => {
             const materia = row.cells[1].innerHTML.split('<br>')[1];
@@ -225,14 +211,12 @@
         });
 
         localStorage.setItem('classe', classe);
-        localStorage.setItem('quadrimestre', quadrimestre);
-        localStorage.setItem('verifiche_' + classe + '_quadrimestre_' + quadrimestre, JSON.stringify(verifiche)); // Salva con chiave specifica per quadrimestre
+        localStorage.setItem('verifiche_' + classe, JSON.stringify(verifiche)); // Salva con chiave specifica per classe
     }
 
     // Funzione per caricare i dati dal localStorage
     function caricaDati(classe) {
-        const quadrimestre = document.getElementById('quadrimestre-select').value;
-        const verifiche = JSON.parse(localStorage.getItem('verifiche_' + classe + '_quadrimestre_' + quadrimestre)); // Carica con chiave specifica per quadrimestre
+        const verifiche = JSON.parse(localStorage.getItem('verifiche_' + classe)); // Carica con chiave specifica per classe
 
         // Se ci sono verifiche salvate, carica i dati nella tabella
         if (verifiche) {
@@ -249,13 +233,13 @@
 
                 // Colonna per data e materia
                 const materiaCell = document.createElement('td');
-                materiaCell.innerHTML = `${verifica.data}<br>${verifica.materia}`;
+                materiaCell.innerHTML = ${verifica.data}<br>${verifica.materia};
                 row.appendChild(materiaCell);
 
                 // Colonna per voto (input text)
                 const votoCell = document.createElement('td');
                 votoCell.innerHTML = 
-                    `<input type="text" value="${verifica.voto}" oninput="cambiaColore(this); salvaDati();" placeholder="Inserisci voto, ass o eson">`;
+                    <input type="text" value="${verifica.voto}" oninput="cambiaColore(this); salvaDati();" placeholder="Inserisci voto, ass o eson">;
                 row.appendChild(votoCell);
 
                 tableBody.appendChild(row);
@@ -263,17 +247,13 @@
         }
     }
 
-    // Carica la classe e il quadrimestre iniziale quando la pagina viene caricata
+    // Carica la classe iniziale quando la pagina viene caricata
     window.onload = function() {
         const classe = localStorage.getItem('classe');
-        const quadrimestre = localStorage.getItem('quadrimestre');
         if (classe) {
             document.getElementById('classe-select').value = classe;
+            caricaDati(classe);
         }
-        if (quadrimestre) {
-            document.getElementById('quadrimestre-select').value = quadrimestre;
-        }
-        caricaDati(classe);
     };
 </script>
 
