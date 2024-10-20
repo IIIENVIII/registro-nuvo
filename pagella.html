@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagella</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .vote-input {
+            width: 50px;
+            text-align: center;
+        }
+        .vote-red {
+            color: red;
+        }
+        .vote-black {
+            color: black;
+        }
+        select, button {
+            margin-top: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Seleziona i dettagli della pagella</h2>
+
+<!-- Selezione tra Media o Superiore -->
+<label for="school-level">Scegli il livello scolastico:</label>
+<select id="school-level">
+    <option value="">-- Seleziona --</option>
+    <option value="3-media">3 Media</option>
+    <option value="1-superiore">1 Superiore</option>
+</select>
+
+<!-- Selezione tra 1° e 2° quadrimestre -->
+<label for="quadrimestre">Scegli il quadrimestre:</label>
+<select id="quadrimestre">
+    <option value="">-- Seleziona --</option>
+    <option value="1-quadrimestre">1° Quadrimestre</option>
+    <option value="2-quadrimestre">2° Quadrimestre</option>
+</select>
+
+<!-- Selezione della classe -->
+<label for="classe">Scegli la classe:</label>
+<select id="classe">
+    <option value="">-- Seleziona --</option>
+</select>
+
+<!-- Bottone per generare la tabella -->
+<button onclick="generateTable()">Genera Tabella</button>
+
+<!-- Tabella dinamica -->
+<table id="student-table" style="display:none;">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Italiano</th>
+            <th>Matematica</th>
+            <th>Scienze</th>
+            <th>Geografia</th>
+            <th>Storia</th>
+            <th>Ginnastica</th>
+            <th>Arte</th>
+            <th>Disegno</th>
+            <th>Informatica</th>
+            <th>Musica</th>
+        </tr>
+    </thead>
+    <tbody id="table-body">
+        <!-- Contenuto dinamico -->
+    </tbody>
+</table>
+
+<script>
+    // Nomi per la classe 3 Media
+    const studenti3Media = [
+        "Stellina Dematteis", "Tartaruga Dematteis", "Yucky Benua", "Lollo Benua", 
+        "Leonard Benua", "Sparcky Benua", "Flaffy Dematteis", "Tina Dematteis", 
+        "Grigetta Benua", "Luna Dematteis", "Luna Benua", "Kendy Dematteis", 
+        "Papero Benua", "Curt Dematteis", "Briciola Dematteis", "Lampo Benua", 
+        "Sunny Benua", "Attiglio Dematteis"
+    ];
+
+    // Nomi per la classe 1 Superiore
+    const studenti1Superiore = [
+        "Cane Dematteis", "Cane Benua", "Mician Dematteis", "Cicciobello Allabue", 
+        "Micheal Temperini", "Cattivo Temperini", "Bambola Rossetti", "Teschio Carottini", 
+        "Robottina Carottini"
+    ];
+
+    // Materie
+    const materie = [
+        "Italiano", "Matematica", "Scienze", "Geografia", "Storia", 
+        "Ginnastica", "Arte", "Disegno", "Informatica", "Musica"
+    ];
+
+    // Carica le selezioni dal localStorage al caricamento della pagina
+    window.onload = function() {
+        const schoolLevel = localStorage.getItem('school-level');
+        const quadrimestre = localStorage.getItem('quadrimestre');
+        const classe = localStorage.getItem('classe');
+
+        if (schoolLevel) {
+            document.getElementById('school-level').value = schoolLevel;
+            updateClassOptions(schoolLevel);
+        }
+        if (quadrimestre) {
+            document.getElementById('quadrimestre').value = quadrimestre;
+        }
+        if (classe) {
+            document.getElementById('classe').value = classe;
+        }
+    };
+
+    // Aggiorna le opzioni delle classi in base al livello scolastico selezionato
+    document.getElementById('school-level').addEventListener('change', function() {
+        localStorage.setItem('school-level', this.value); // Salva nel localStorage
+        updateClassOptions(this.value);
+    });
+
+    function updateClassOptions(level) {
+        const classeSelect = document.getElementById('classe');
+        classeSelect.innerHTML = ''; // Pulisce la selezione
+
+        if (level === '3-media') {
+            classeSelect.innerHTML = '<option value="3-media">3 Media</option>';
+        } else if (level === '1-superiore') {
+            classeSelect.innerHTML = '<option value="1-superiore">1 Superiore</option>';
+        }
+    }
+
+    // Seleziona la classe e salva nel localStorage
+    document.getElementById('classe').addEventListener('change', function() {
+        localStorage.setItem('classe', this.value); // Salva nel localStorage
+    });
+
+    // Genera la tabella degli studenti e dei voti
+    function generateTable() {
+        const schoolLevel = document.getElementById('school-level').value;
+        const classe = document.getElementById('classe').value;
+
+        if (!schoolLevel || !classe) {
+            alert("Seleziona il livello scolastico e la classe.");
+            return;
+        }
+
+        const tableBody = document.getElementById('table-body');
+        tableBody.innerHTML = ''; // Pulisce il corpo della tabella
+        const studenti = schoolLevel === '3-media' ? studenti3Media : studenti1Superiore;
+
+        studenti.forEach(nome => {
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>${nome}</td>`;
+
+            materie.forEach(materia => {
+                const input = document.createElement('input');
+                input.type = 'number';
+                input.min = '10';
+                input.max = '100';
+                input.className = 'vote-input';
+                input.addEventListener('input', function() {
+                    this.className = (this.value < 60) ? 'vote-input vote-red' : 'vote-input vote-black';
+                });
+                
+                const cell = document.createElement('td');
+                cell.appendChild(input);
+                row.appendChild(cell);
+            });
+
+            tableBody.appendChild(row);
+        });
+
+        document.getElementById('student-table').style.display = 'table'; // Mostra la tabella
+    }
+</script>
+
+</body>
+</html>
