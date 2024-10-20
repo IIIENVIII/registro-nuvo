@@ -49,14 +49,6 @@
 
 <h2>Seleziona i dettagli della pagella</h2>
 
-<!-- Selezione tra Media o Superiore -->
-<label for="school-level">Scegli il livello scolastico:</label>
-<select id="school-level">
-    <option value="">-- Seleziona --</option>
-    <option value="3-media">3 Media</option>
-    <option value="1-superiore">1 Superiore</option>
-</select>
-
 <!-- Selezione tra 1° e 2° quadrimestre -->
 <label for="quadrimestre">Scegli il quadrimestre:</label>
 <select id="quadrimestre">
@@ -69,10 +61,12 @@
 <label for="classe">Scegli la classe:</label>
 <select id="classe">
     <option value="">-- Seleziona --</option>
+    <option value="3-media">3 Media</option>
+    <option value="1-superiore">1 Superiore</option>
 </select>
 
-<!-- Bottone per generare la tabella -->
-<button onclick="generateTable()">Genera Tabella</button>
+<!-- Bottone per visualizzare la tabella -->
+<button onclick="generateTable()">Visualizza Tabella</button>
 
 <!-- Tabella dinamica -->
 <table id="student-table" style="display:none;">
@@ -89,6 +83,7 @@
             <th>Disegno</th>
             <th>Informatica</th>
             <th>Musica</th>
+            <th>Promosso/Bocciato</th> <!-- Colonna Promosso/Bocciato -->
         </tr>
     </thead>
     <tbody id="table-body">
@@ -97,21 +92,37 @@
 </table>
 
 <script>
-    // Nomi per la classe 3 Media
-    const studenti3Media = [
-        "Stellina Dematteis", "Tartaruga Dematteis", "Yucky Benua", "Lollo Benua", 
-        "Leonard Benua", "Sparcky Benua", "Flaffy Dematteis", "Tina Dematteis", 
-        "Grigetta Benua", "Luna Dematteis", "Luna Benua", "Kendy Dematteis", 
-        "Papero Benua", "Curt Dematteis", "Briciola Dematteis", "Lampo Benua", 
-        "Sunny Benua", "Attiglio Dematteis"
-    ];
+    // Nomi per 3 Media per 1° e 2° quadrimestre
+    const studenti3Media = {
+        "1-quadrimestre": [
+            "Stellina Dematteis", "Tartaruga Dematteis", "Yucky Benua", "Lollo Benua", 
+            "Leonard Benua", "Sparcky Benua", "Flaffy Dematteis", "Tina Dematteis", 
+            "Grigetta Benua", "Luna Dematteis", "Luna Benua", "Kendy Dematteis", 
+            "Papero Benua", "Curt Dematteis", "Briciola Dematteis", "Lampo Benua", 
+            "Sunny Benua", "Attiglio Dematteis"
+        ],
+        "2-quadrimestre": [
+            "Stellina Dematteis", "Tartaruga Dematteis", "Yucky Benua", "Lollo Benua", 
+            "Leonard Benua", "Sparcky Benua", "Flaffy Dematteis", "Tina Dematteis", 
+            "Grigetta Benua", "Luna Dematteis", "Luna Benua", "Kendy Dematteis", 
+            "Papero Benua", "Curt Dematteis", "Briciola Dematteis", "Lampo Benua", 
+            "Sunny Benua", "Attiglio Dematteis"
+        ]
+    };
 
-    // Nomi per la classe 1 Superiore
-    const studenti1Superiore = [
-        "Cane Dematteis", "Cane Benua", "Mician Dematteis", "Cicciobello Allabue", 
-        "Micheal Temperini", "Cattivo Temperini", "Bambola Rossetti", "Teschio Carottini", 
-        "Robottina Carottini"
-    ];
+    // Nomi per 1 Superiore per 1° e 2° quadrimestre
+    const studenti1Superiore = {
+        "1-quadrimestre": [
+            "Cane Dematteis", "Cane Benua", "Mician Dematteis", "Cicciobello Allabue", 
+            "Micheal Temperini", "Cattivo Temperini", "Bambola Rossetti", 
+            "Teschio Carottini", "Robottina Carottini"
+        ],
+        "2-quadrimestre": [
+            "Cane Dematteis", "Cane Benua", "Mician Dematteis", "Cicciobello Allabue", 
+            "Micheal Temperini", "Cattivo Temperini", "Bambola Rossetti", 
+            "Teschio Carottini", "Robottina Carottini"
+        ]
+    };
 
     // Materie
     const materie = [
@@ -119,59 +130,49 @@
         "Ginnastica", "Arte", "Disegno", "Informatica", "Musica"
     ];
 
-    // Carica le selezioni dal localStorage al caricamento della pagina
+    // Carica le selezioni e i voti dal localStorage al caricamento della pagina
     window.onload = function() {
-        const schoolLevel = localStorage.getItem('school-level');
         const quadrimestre = localStorage.getItem('quadrimestre');
         const classe = localStorage.getItem('classe');
 
-        if (schoolLevel) {
-            document.getElementById('school-level').value = schoolLevel;
-            updateClassOptions(schoolLevel);
-        }
         if (quadrimestre) {
             document.getElementById('quadrimestre').value = quadrimestre;
         }
         if (classe) {
             document.getElementById('classe').value = classe;
         }
+        generateTable(true); // Ricarica la tabella se ci sono dati salvati
     };
 
-    // Aggiorna le opzioni delle classi in base al livello scolastico selezionato
-    document.getElementById('school-level').addEventListener('change', function() {
-        localStorage.setItem('school-level', this.value); // Salva nel localStorage
-        updateClassOptions(this.value);
+    // Seleziona la classe e il quadrimestre e salva nel localStorage
+    document.getElementById('quadrimestre').addEventListener('change', function() {
+        localStorage.setItem('quadrimestre', this.value); // Salva nel localStorage
     });
 
-    function updateClassOptions(level) {
-        const classeSelect = document.getElementById('classe');
-        classeSelect.innerHTML = ''; // Pulisce la selezione
-
-        if (level === '3-media') {
-            classeSelect.innerHTML = '<option value="3-media">3 Media</option>';
-        } else if (level === '1-superiore') {
-            classeSelect.innerHTML = '<option value="1-superiore">1 Superiore</option>';
-        }
-    }
-
-    // Seleziona la classe e salva nel localStorage
     document.getElementById('classe').addEventListener('change', function() {
         localStorage.setItem('classe', this.value); // Salva nel localStorage
     });
 
     // Genera la tabella degli studenti e dei voti
     function generateTable() {
-        const schoolLevel = document.getElementById('school-level').value;
+        const quadrimestre = document.getElementById('quadrimestre').value;
         const classe = document.getElementById('classe').value;
 
-        if (!schoolLevel || !classe) {
-            alert("Seleziona il livello scolastico e la classe.");
+        if (!quadrimestre || !classe) {
+            alert("Seleziona il quadrimestre e la classe.");
             return;
         }
 
         const tableBody = document.getElementById('table-body');
         tableBody.innerHTML = ''; // Pulisce il corpo della tabella
-        const studenti = schoolLevel === '3-media' ? studenti3Media : studenti1Superiore;
+
+        // Scegli gli studenti in base alla classe e al quadrimestre
+        let studenti;
+        if (classe === '3-media') {
+            studenti = studenti3Media[quadrimestre];
+        } else if (classe === '1-superiore') {
+            studenti = studenti1Superiore[quadrimestre];
+        }
 
         studenti.forEach(nome => {
             const row = document.createElement('tr');
@@ -183,14 +184,43 @@
                 input.min = '10';
                 input.max = '100';
                 input.className = 'vote-input';
+                input.value = localStorage.getItem(`${nome}-${materia}-${quadrimestre}`) || ''; // Carica il voto se esiste
                 input.addEventListener('input', function() {
                     this.className = (this.value < 60) ? 'vote-input vote-red' : 'vote-input vote-black';
+                    localStorage.setItem(`${nome}-${materia}-${quadrimestre}`, this.value); // Salva il voto nel localStorage
                 });
-                
+
+                // Imposta il colore in base al voto esistente
+                if (input.value < 60 && input.value !== '') {
+                    input.className = 'vote-input vote-red';
+                } else if (input.value !== '') {
+                    input.className = 'vote-input vote-black';
+                }
+
                 const cell = document.createElement('td');
                 cell.appendChild(input);
                 row.appendChild(cell);
             });
+
+            // Colonna "Promosso/Bocciato" solo per il 2° quadrimestre
+            if (quadrimestre === "2-quadrimestre") {
+                const select = document.createElement('select');
+                select.innerHTML = `
+                    <option value="Promosso" ${localStorage.getItem(`${nome}-promosso-${quadrimestre}`) === 'Promosso' ? 'selected' : ''}>Promosso</option>
+                    <option value="Bocciato" ${localStorage.getItem(`${nome}-promosso-${quadrimestre}`) === 'Bocciato' ? 'selected' : ''}>Bocciato</option>
+                `;
+                select.addEventListener('change', function() {
+                    localStorage.setItem(`${nome}-promosso-${quadrimestre}`, this.value); // Salva il risultato nel localStorage
+                });
+
+                const cell = document.createElement('td');
+                cell.appendChild(select);
+                row.appendChild(cell);
+            } else {
+                // Se non è il 2° quadrimestre, aggiungi una cella vuota
+                const cell = document.createElement('td');
+                row.appendChild(cell);
+            }
 
             tableBody.appendChild(row);
         });
