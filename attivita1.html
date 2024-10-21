@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attività Studente</title>
+    <title>Gestione Verifiche</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
         }
         table {
             width: 100%;
@@ -19,110 +43,219 @@
         }
         th, td {
             padding: 10px;
-            text-align: left;
+            text-align: center;
         }
-        th {
-            background-color: #f2f2f2;
+        .red {
+            color: red;
+        }
+        .black {
+            color: black;
+        }
+        .add-button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-    <h1>Gestione Studente</h1>
+<div class="container">
+    <h1>Gestione Verifiche</h1>
 
-    <!-- Form per inserire nome studente, motivazione e scelta tra censura, ammonizione e sospensione -->
-    <form id="studentForm">
-        <label for="nome">Nome Studente:</label>
-        <input type="text" id="nome" name="nome" required><br><br>
+    <!-- Selezione classe -->
+    <div class="form-group">
+        <label for="classe-select">Seleziona classe:</label>
+        <select id="classe-select" onchange="cambiaClasse()">
+            <option value="" disabled selected>-- Seleziona classe --</option>
+            <option value="3media">3 media</option>
+            <option value="1superiore">1 superiore</option>
+        </select>
+    </div>
 
-        <label for="motivazione">Motivazione:</label>
-        <input type="text" id="motivazione" name="motivazione" required><br><br>
+    <!-- Selezione della materia -->
+    <div class="form-group">
+        <label for="materia-select">Seleziona materia:</label>
+        <select id="materia-select">
+            <option value="" disabled selected>-- Seleziona materia --</option>
+            <option value="Italiano">Italiano</option>
+            <option value="Matematica">Matematica</option>
+            <option value="Scienze">Scienze</option>
+            <option value="Geografia">Geografia</option>
+            <option value="Storia">Storia</option>
+            <option value="Ginnastica">Ginnastica</option>
+            <option value="Arte">Arte</option>
+            <option value="Disegno">Disegno</option>
+            <option value="Informatica">Informatica</option>
+            <option value="Musica">Musica</option>
+        </select>
+    </div>
 
-        <label for="azione">Azione Disciplinare:</label><br>
-        <input type="radio" id="censura" name="azione" value="Censura" required>
-        <label for="censura">Censura</label><br>
+    <!-- Inserimento data -->
+    <div class="form-group">
+        <label for="data">Data:</label>
+        <input type="date" id="data">
+    </div>
 
-        <input type="radio" id="ammonizione" name="azione" value="Ammonizione">
-        <label for="ammonizione">Ammonizione</label><br>
+    <!-- Bottone per creare la tabella delle verifiche -->
+    <button class="add-button" onclick="creaTabella()">Crea Verifica</button>
 
-        <input type="radio" id="sospensione" name="azione" value="Sospensione">
-        <label for="sospensione">Sospensione</label><br><br>
+    <!-- Link alla pagina dei risultati -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="risultati1.html">Visualizza risultati</a>
+    </div>
 
-        <button type="button" onclick="aggiungiStudente()">Crea</button>
-    </form>
-
-    <!-- Tabella per visualizzare i dati inseriti -->
-    <h2>Tabella Studenti</h2>
-    <table id="tabellaStudenti">
+    <!-- Tabella delle verifiche -->
+    <table id="verifiche-table">
         <thead>
             <tr>
-                <th>Nome Studente</th>
-                <th>Motivazione</th>
-                <th>Azione Disciplinare</th>
+                <th>Nome</th>
+                <th>Data e Materia</th>
+                <th>Voto</th>
             </tr>
         </thead>
-        <tbody>
-            <!-- Righe aggiunte dinamicamente qui -->
+        <tbody id="verifiche-body">
         </tbody>
     </table>
+</div>
 
-    <script>
-        // Funzione per aggiungere uno studente alla tabella e salvarlo in LocalStorage
-        function aggiungiStudente() {
-            // Prendere i valori dal form
-            var nome = document.getElementById('nome').value;
-            var motivazione = document.getElementById('motivazione').value;
-            var azione = document.querySelector('input[name="azione"]:checked').value;
+<script>
+    const studenti = {
+        "3media": [
+            "Stellina Dematteis", "Tartaruga Dematteis", "Yucky Benua", "Lollo Benua", "Leonard Benua", 
+            "Sparcky Benua", "Flaffy Dematteis", "Tina Dematteis", "Grigetta Benua", "Luna Dematteis",
+            "Luna Benua", "Kendy Dematteis", "Papero Benua", "Curt Dematteis", "Briciola Dematteis", "Lampo Benua", "Sunny Benua", "Attiglio Dematteis",
+        ],
+        "1superiore": [
+            "Cane Dematteis", "Cane Benua", "Mician Dematteis", "Cicciobello Allabue", "Micheal Temperini", 
+            "Cattivo Temperini", "Bambola Rossetti", "Teschio Carottini", "Robottina Carottini"
+        ]
+    };
 
-            // Creare un oggetto per lo studente
-            var studente = {
-                nome: nome,
-                motivazione: motivazione,
-                azione: azione
-            };
+    // Funzione per cambiare classe e resettare la tabella
+    function cambiaClasse() {
+        const classeSelezionata = document.getElementById('classe-select').value;
+        document.getElementById('verifiche-body').innerHTML = ''; // Pulisce la tabella
+        caricaDati(classeSelezionata); // Carica i dati della nuova classe
+    }
 
-            // Recuperare la lista studenti dal LocalStorage (se esiste)
-            var studenti = JSON.parse(localStorage.getItem('studenti')) || [];
+    // Funzione per creare la tabella delle verifiche
+    function creaTabella() {
+        const classe = document.getElementById('classe-select').value;
+        const materia = document.getElementById('materia-select').value;
+        const data = document.getElementById('data').value;
 
-            // Aggiungere lo studente alla lista
-            studenti.push(studente);
-
-            // Salvare la lista studenti aggiornata nel LocalStorage
-            localStorage.setItem('studenti', JSON.stringify(studenti));
-
-            // Aggiungere lo studente alla tabella
-            aggiornaTabella();
-
-            // Resettare il form dopo l'inserimento
-            document.getElementById('studentForm').reset();
+        if (!classe || !materia || !data) {
+            alert("Per favore, riempi tutti i campi.");
+            return;
         }
 
-        // Funzione per aggiornare la tabella con i dati dal LocalStorage
-        function aggiornaTabella() {
-            var studenti = JSON.parse(localStorage.getItem('studenti')) || [];
+        const tableBody = document.getElementById('verifiche-body');
 
-            // Pulire la tabella prima di aggiungere nuovi dati
-            var tabella = document.getElementById('tabellaStudenti').getElementsByTagName('tbody')[0];
-            tabella.innerHTML = '';
+        // Aggiungi una nuova riga per ogni studente
+        studenti[classe].forEach(nome => {
+            const row = document.createElement('tr');
 
-            // Aggiungere ogni studente alla tabella
-            studenti.forEach(function(studente) {
-                var nuovaRiga = tabella.insertRow();
-                var cellaNome = nuovaRiga.insertCell(0);
-                var cellaMotivazione = nuovaRiga.insertCell(1);
-                var cellaAzione = nuovaRiga.insertCell(2);
+            // Colonna per nome
+            const nameCell = document.createElement('td');
+            nameCell.textContent = nome;
+            row.appendChild(nameCell);
 
-                cellaNome.innerHTML = studente.nome;
-                cellaMotivazione.innerHTML = studente.motivazione;
-                cellaAzione.innerHTML = studente.azione;
+            // Colonna per data e materia
+            const materiaCell = document.createElement('td');
+            materiaCell.innerHTML = ${data}<br>${materia};
+            row.appendChild(materiaCell);
+
+            // Colonna per voto (input text)
+            const votoCell = document.createElement('td');
+            votoCell.innerHTML = 
+                <input type="text" oninput="cambiaColore(this); salvaDati();" placeholder="Inserisci voto, ass o eson">;
+            row.appendChild(votoCell);
+
+            tableBody.appendChild(row);
+        });
+
+        // Salva i dati nel localStorage
+        salvaDati();
+    }
+
+    function cambiaColore(input) {
+        const voto = input.value.toLowerCase();
+        if (voto === "ass" || voto === "eson") {
+            input.style.color = "blue";
+        } else if (!isNaN(voto) && voto >= 10 && voto <= 59) {
+            input.style.color = "red"; // Voti da 10 a 59
+        } else if (!isNaN(voto) && voto >= 60 && voto <= 100) {
+            input.style.color = "black"; // Voti da 60 a 100
+        } else {
+            input.style.color = ""; // Reset colore se non è valido
+        }
+    }
+
+    // Funzione per salvare i dati nel localStorage
+    function salvaDati() {
+        const classe = document.getElementById('classe-select').value;
+        const verifiche = [];
+
+        if (!classe) return;
+
+        [...document.getElementById('verifiche-body').rows].forEach(row => {
+            const materia = row.cells[1].innerHTML.split('<br>')[1];
+            const data = row.cells[1].innerHTML.split('<br>')[0];
+            const voto = row.cells[2].children[0]?.value || ""; // Aggiunta per il voto
+            verifiche.push({ data, materia, nome: row.cells[0].innerText, voto });
+        });
+
+        localStorage.setItem('classe', classe);
+        localStorage.setItem('verifiche_' + classe, JSON.stringify(verifiche)); // Salva con chiave specifica per classe
+    }
+
+    // Funzione per caricare i dati dal localStorage
+    function caricaDati(classe) {
+        const verifiche = JSON.parse(localStorage.getItem('verifiche_' + classe)); // Carica con chiave specifica per classe
+
+        // Se ci sono verifiche salvate, carica i dati nella tabella
+        if (verifiche) {
+            const tableBody = document.getElementById('verifiche-body');
+            tableBody.innerHTML = ''; // Pulisce la tabella prima di caricare
+
+            verifiche.forEach(verifica => {
+                const row = document.createElement('tr');
+
+                // Colonna per nome
+                const nameCell = document.createElement('td');
+                nameCell.textContent = verifica.nome;
+                row.appendChild(nameCell);
+
+                // Colonna per data e materia
+                const materiaCell = document.createElement('td');
+                materiaCell.innerHTML = ${verifica.data}<br>${verifica.materia};
+                row.appendChild(materiaCell);
+
+                // Colonna per voto (input text)
+                const votoCell = document.createElement('td');
+                votoCell.innerHTML = 
+                    <input type="text" value="${verifica.voto}" oninput="cambiaColore(this); salvaDati();" placeholder="Inserisci voto, ass o eson">;
+                row.appendChild(votoCell);
+
+                tableBody.appendChild(row);
             });
         }
+    }
 
-        // Caricare i dati dalla LocalStorage quando la pagina viene caricata
-        window.onload = function() {
-            aggiornaTabella();
-        };
-    </script>
+    // Carica la classe iniziale quando la pagina viene caricata
+    window.onload = function() {
+        const classe = localStorage.getItem('classe');
+        if (classe) {
+            document.getElementById('classe-select').value = classe;
+            caricaDati(classe);
+        }
+    };
+</script>
 
 </body>
 </html>
